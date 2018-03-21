@@ -1,6 +1,6 @@
 window.onload=function()
 {
-    var oHeader=document.getElementsByTagName('header')[0];
+    // var oHeader=document.getElementsByTagName('header')[0];
     var oDiv=document.getElementById('titlelist');
     var oUl=oDiv.getElementsByTagName('ul')[0];
     var aLi=oUl.getElementsByTagName('li');
@@ -16,7 +16,7 @@ window.onload=function()
         }
         j>5?j=0:j++;
         aLi[j].className='active';
-        oHeader.style.background = "url(images/"+j+".jpg) center center no-repeat";
+        document.body.style.background = "url(images/"+j+".jpg) center center no-repeat";
         /*switch(j)
         {
         case 0:
@@ -79,7 +79,7 @@ window.onload=function()
                 default:
                     break;
             }*/
-            oHeader.style.background = "url(images/"+j+".jpg) center center no-repeat";
+            document.body.style.background = "url(images/"+j+".jpg) center center no-repeat";
             //that=this;
             clearInterval(ttimer);
             for(i=0;i<aLi.length;i++)
