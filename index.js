@@ -27,7 +27,7 @@ aJax.onreadystatechange=function(){
             oA.target="_blank";
             oLi.appendChild(oA);
             oLi.appendChild(oP);
-            oUl.insertBefore(oLi,oUl.childNodes[0]);
+            oUl.append(oLi);
         })
     }
 }
