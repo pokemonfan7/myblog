@@ -2,7 +2,10 @@ body, p, h1 {margin: 0;}
 ul, ol {list-style: none; margin: 0; padding: 0;}
 a{text-decoration: none;}
 
-body{background: #f4f5f5;}
+body{
+  font-fmily: 微软雅黑, "Open Sans", sans-serif;
+  background: #f4f5f5;
+}
 .fl{float: left;}
 .fr{float: right;}
 .clearfix:after{
@@ -12,15 +15,31 @@ body{background: #f4f5f5;}
   clear: both;
   visibility: hidden;
 }
+.new:after{
+  content: "new";
+  display: inline-block;
+  width: 20px;
+  height:10px;
+  margin-left: 1px;
+  font-size: 8px;
+  font-weight: normal;
+  line-height: 10px;
+  vertical-align: super;
+  text-align: center;
+  color: #fff;
+  background: #f55351;
+  border-radius: 3px;
+}
 /*nav*/
 nav{
   width: 100%;
   background: #fff;
-  box-shadow: 0 1px 0 0 #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .navbar-fixed-top{
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 .container{
   max-width: 980px;
@@ -33,16 +52,17 @@ nav{
   background: url(./img/1.jpg) 0 0 no-repeat;
 }
 .nav-left li{
-  margin:0 20px;
+  margin: 0 20px;
 }
 .nav-left li a{
   display: inline-block;
   text-align: center;
-  line-height: 60px;
+  line-height: 54px;
   color: #777;
 }
 .nav-left li a:hover{
   color: #62c292;
+  border-bottom: 3px solid #62c292;
 }
 .nav-right .login, .nav-right .register{
   display: inline-block;
@@ -71,21 +91,76 @@ main{
 }
 .work-list{
   width: 640px;
-  height:1000px;
   background: #fff;
 }
 .work-aside{
   width: 320px;
-  height:1000px;
   background: #fff;
 }
-
-
-
-
-
-
-
-
+.list-head, .aside-head{
+  width: 100%;
+}
+.list-head-container, .aside-head-container{
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.list-head a, .aside-head a{
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #777;
+}
+.list-body, .aside-body{
+  width: 100%;
+}
+.list-body-container, .aside-body-container{
+  padding: 0 15px;
+}
+.list-body-container li{
+  height: 60px;
+  padding: 10px 0;
+}
+.list-body-container li>a{
+  display: inline-block;
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2e3135;
+}
+.list-body-container li p{
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+  color: #777;
+}
+.list-body-container li p>a{
+  color: #777;
+}
+.list-body-container li p>a:hover{
+  color: #62c292;
+}
+.list-body-container li p span:after{
+  content: "\B7";
+  margin: 0 4px;
+}
+.aside-body figure{
+  position: relative;
+  margin: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.aside-body figure img{
+  width: 135px;
+  height: 170px;
+}
+.aside-body figure figcaption{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 170px;
+  margin-left: 5px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #555;
+}
 
 

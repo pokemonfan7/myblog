@@ -1,0 +1,297 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0;
+}
+body{
+	font-size:12px;
+	font-family:"微软雅黑";
+	background:#eee;
+}
+a:link,a:visited{
+	color:#26b5ff;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+/*nav*/
+header{
+	width:1535px;
+	height:720px;
+	margin:0 auto;
+	background:url(images/0.jpg) center center no-repeat;
+}
+header nav{
+	width:1535px;
+	height:70px;
+	margin:0 auto;	
+	position:relative;
+}
+header nav .logo{
+	width:150px;
+	height:70px;
+	margin-right:49px;
+	float:left;
+	overflow:hidden;
+}
+header nav .logo a{
+	cursor:pointer;
+	position:absolute;
+	top:30px;
+}
+header nav .logo img{
+	width:100%;
+	height:100%;
+}
+header nav .list{
+	width:275px;
+	height:70px;
+	float:left;
+	position:relative;
+}
+header nav .list ul{
+	width:275px;
+	height:23px;
+	position:absolute;
+	top:34px;
+}
+header nav .list ul li{
+	width:40px;
+	height:23px;
+	text-align:center;
+	font-size:18px;
+	margin-right:14px;
+	line-height:23px;
+	float:left;
+	color:#fff;
+}
+header nav .list ul li a{
+	cursor:pointer;
+}
+header nav .list ul li a:hover{
+	color:#29b5ff;
+}
+header nav .list ul li aside{
+	display:none;
+	width:262px;
+	height:197px;
+	background:#f0f1f3;
+	position:absolute;
+	top:36px;
+	left:-20px;
+    opacity:0.8;
+}
+header nav .list ul .te01:hover aside{
+	display:block;
+}
+header nav .list ul li aside span{
+	width:16px;
+	height:10px;
+	background:url(images/liebiao.png) 0 0 no-repeat;
+	position:absolute;
+	left:32px;
+	top:-10px;
+}
+header nav .list ul li aside ol{
+	width:111px;
+	float:left;
+}
+header nav .list ul li aside ol li{
+	width:111px;
+	height:18px;
+	font-size:18px;
+	line-height:18px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+	text-align:left;
+	margin-bottom:26px;
+	color:#000;
+	font-weight:normal;
+}
+header nav .list ul li aside .leftlist{
+	margin:22px 0 0 26px;
+}
+header nav .list ul li aside .rightlist{
+	margin-top:22px;
+}
+header nav .list ul li ul{
+	display:none;
+}
+header nav .list .te05:hover ul{
+	display:block;
+}
+header nav .list ul li ul .arrow{
+    width:16px;
+    height:10px;
+    background:url(images/liebiao.png) 0 0 no-repeat;
+    position:absolute;
+    left:10px;
+    top:0;
+}
+header nav .list ul li ul li .content{
+    width:676px;
+    height:220px;
+    background:#f0f2f4;
+    opacity:0.8;
+    padding:18px 13px;
+    position:absolute;
+    left:-200px;
+    top:10px;
+}
+header nav .list ul li ul li .content dl dt{
+    float:left;
+    text-align:left;
+    width:80px;
+    padding-right:11px;
+    border-right:1px solid #d8d8d8;
+    color:#000;
+    font-size:18px;
+    display:inline-block;
+}
+header nav .list ul li ul li .content dl dd{
+    height:auto;
+    margin-left:90px;
+    text-align:left;
+}header nav .list ul li ul li .content dl dd a{
+    display:inline-block;
+    font-size:16px;
+    line-height:23px;
+    padding:0 14px 15px;
+    margin:0;
+    width:auto;
+    max-width:80px;
+    overflow:inherit;
+    color:#555;
+ }
+header nav .search{
+	width:464px;
+	height:70px;
+	padding-top:20px;
+	float:left;
+	position:relative;
+	left:50px;
+}
+header nav .search .shuru{
+	width:282px;
+	height:44px;
+	border:1px solid #fff;
+	border-radius:22px 0 0 22px;
+	background:#fff;
+	float:left;
+	padding-left:22px;
+	font-size:24px;
+	line-height:46px;
+	opacity:0.3;
+	outline:none;
+}
+header nav .search a{
+	width:25px;
+	height:19px;
+	background:url(images/music.png) 0 0 no-repeat;
+	position:absolute;
+	left:266px;
+	top:32px;
+}
+header nav .search .souku{
+	width:98px;
+	height:46px;
+	border:1px solid #3aa0ff;
+	border-radius:0 22px 22px 0;
+	background:linear-gradient(to right,#19c3ff 0,#3b9fff 100%);
+	float:left;
+	font-size:15px;
+	text-align:center;
+	line-height:46px;
+	color:#fff;
+	cursor:pointer;
+	outline:none;
+}
+header nav .ucenter{
+	width:372px;
+	height:70px;
+	float:right;
+	position:relative;
+}
+header nav .ucenter ul{
+	width:345px;
+	height:48px;
+	float:left;
+	padding-top:20px;
+}
+header nav .ucenter ul a{
+	cursor:pointer;
+}
+header nav .ucenter ul a:hover{
+	color:#29b5ff;
+}
+header nav .ucenter ul li{
+	width:50px;
+	height:47px;
+	text-align:center;
+	float:left;
+	color:#fff;
+	font-size:13px;
+	margin-left:5px;
+}
+header nav .ucenter ul .user{
+	margin-left:20px;
+}
+header #titlelist{
+	width:275px;
+	height:417px;
+	background:#222;
+	float:right;
+	margin-top:40px;
+	margin-right:20px;
+	opacity:0.7;
+}
+header #titlelist ul{
+	width:235px;
+	height:418px;
+	margin:0 auto;
+}
+header #titlelist ul li{
+	width:235px;
+	height:17px;
+	margin-top:19px;
+	padding-bottom:18px;
+	border-bottom:1px solid #dcd4ce;
+}
+header #titlelist ul li:last-child{
+	border:none;
+}
+header #titlelist ul .active{
+	width:235px;
+	height:54px;
+	margin-top:19px;
+	margin-bottom:12px;
+}
+header #titlelist ul .active .big1{
+	height:24px;
+	font-size:24px;
+	margin-bottom:14px;
+	color:#fff;
+	display:block;
+}
+header #titlelist ul .active .maohao {
+	display:none;
+}
+header #titlelist ul .active .middle1{
+	height:17px;
+	font-size:17px;
+	color:#f1ffff;
+	display:block;
+}
+header #titlelist ul li a{
+	width:225px;
+	height:17px;
+	font-size:17px;
+	color:#dcd4ce;
+}
+
+
+
+
