@@ -1,5 +1,13 @@
 window.onload=function()
 {
+	var images=["images/0.jpg","images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg","images/6.jpg"];
+	images.forEach(
+	function(v){
+		var img = new Image(); 
+		img.src = v; 
+		console.log(v+"预加载");
+	}
+	);
     // var oHeader=document.getElementsByTagName('header')[0];
     var oDiv=document.getElementById('titlelist');
     var oUl=oDiv.getElementsByTagName('ul')[0];
