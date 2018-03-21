@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title></title>
+		<style>
+		div,ul,li{
+		margin:0;
+		padding:0;
+		border:0;
+		list-style:none;
+		}
+		body{
+            background-image:linear-gradient(45deg,#e1deb0 25%,transparent 25%,transparent 75%,#e1deb0 75%),linear-gradient(45deg,#e1deb0 25%,transparent 25%,transparent 75%,#e1deb0 75%);
+            background-size:100px 100px;
+            background-position:0 0, 50px 50px;
+		}
+		input{
+			box-shadow:none;
+			outline:none;
+		}
+		#imgdiv{
+		    width:100%;
+		    height:1000px;
+            position:relative;
+            overflow:hidden;
+            margin-top:-40px;
+		}
+		#imgul{
+		width:12070px;
+		height:615px;
+		margin-top:40px;
+		position:absolute;
+		left:0;
+		top:0;
+		}
+		li{
+		width:345px;
+		height:615px;
+		float:left;
+		margin-right:10px;
+		}
+		img{
+		width:345px;
+		height:615px;
+		}
+		#left1{
+			width:80px;
+			height:48px;
+			position:absolute;
+			top:660px;
+			left:300px;
+			background:url(images/zuo.png);
+		}
+		#right1{
+			width:80px;
+			height:48px;
+			position:absolute;
+			top:660px;
+			left:500px;
+			background:url(images/you.png);
+		}#left2{
+			 width:48px;
+			 height:48px;
+			 position:absolute;
+			 top:660px;
+			 left:660px;
+			 background:url(images/zuo1.png);
+		 }
+		#right2{
+			width:48px;
+			height:48px;
+			position:absolute;
+			top:660px;
+			left:870px;
+			background:url(images/you1.png);
+		}
+        #stop1{
+            width:48px;
+            height:48px;
+            position:absolute;
+            top:660px;
+            left:765px;
+            background:url(images/stop.png);
+        }
+		</style>
+		<script>
+			window.onload=function()
+			{
+				var oUl=document.getElementById('imgul');
+				var oLeft=document.getElementById('left1');
+				var oRight=document.getElementById('right1');
+                var aLeft=document.getElementById('left2');
+                var aRight=document.getElementById('right2');
+                var oStop=document.getElementById('stop1');
+				var timer=null;
+				var timer1=null;
+				var isSpeed=0;
+				oUl.innerHTML+=oUl.innerHTML;
+
+				function toMove()
+				{
+					oUl.style.left=oUl.offsetLeft+isSpeed+'px';
+					if(oUl.offsetLeft<-oUl.offsetWidth/2)
+					{
+						oUl.style.left='0px';
+					}else if(oUl.offsetLeft>0)
+					{
+					    oUl.style.left=-oUl.offsetWidth/2+'px';
+					}
+				}
+
+
+				//第一排按钮
+				oLeft.onmousedown=function()
+				{
+					isSpeed=1;
+				    timer1=setInterval(toMove,1);
+				};
+				oLeft.onmouseup=function()
+				{
+					clearInterval(timer1);
+				};
+				oRight.onmousedown=function()
+				{
+					isSpeed=-1;
+				    timer1=setInterval(toMove,1);
+				};
+				oRight.onmouseup=function()
+				{
+					clearInterval(timer1);
+				};
+
+				//第二排按钮
+				aLeft.onclick=function()
+				{
+                    isSpeed=1;
+					if(timer)
+					{
+						clearInterval(timer);
+					}
+					timer=setInterval(toMove,1);
+				};
+                aRight.onclick=function()
+                {
+                    isSpeed=-1;
+                    if(timer)
+                    {
+                        clearInterval(timer);
+                    }
+                    timer=setInterval(toMove,1);
+                };
+                oStop.onclick=function()
+				{
+				    clearInterval(timer);
+				}
+
+			};
+		</script>
+	</head>
+<body>
+<div id="imgdiv">
+	<ul id="imgul">
+		<li><img src="images/1.jpg"></li>
+		<li><img src="images/2.jpg"></li>
+		<li><img src="images/3.jpg"></li>
+		<li><img src="images/4.jpg"></li>
+		<li><img src="images/5.jpg"></li>
+		<li><img src="images/6.jpg"></li>
+		<li><img src="images/7.jpg"></li>
+		<li><img src="images/8.jpg"></li>
+		<li><img src="images/9.jpg"></li>
+		<li><img src="images/10.jpg"></li>
+		<li><img src="images/11.jpg"></li>
+		<li><img src="images/12.jpg"></li>
+		<li><img src="images/13.jpg"></li>
+		<li><img src="images/14.jpg"></li>
+		<li><img src="images/15.jpg"></li>
+		<li><img src="images/16.jpg"></li>
+		<li><img src="images/17.jpg"></li>
+	</ul>
+	<div id="left1"></div>
+	<div id="right1"></div>
+	<div id="left2"></div>
+	<div id="right2"></div>
+	<div id="stop1"></div>
+</div>
+</body>
+</html>

@@ -84,4 +84,32 @@ nav{
 }
 
 /*main*/
-
+main{
+  max-width: 980px;
+  margin:0 auto;
+  margin-top: 70px;
+}
+.main-container{
+  background: #fff;
+}
+.main-container div{
+  float: left;
+  width: 460px;
+  padding: 10px;
+}
+.main-container div:nth-child(2n){
+  margin-right: 16px;
+}
+.main-container div a{
+  float:left;
+  display: flex;
+  width: 200px;
+}
+.main-container div a img{
+  justify-content: center;
+  align-items: center;
+}
+.main-container div p{
+  font-size: 14px;
+  color: #777;
+}
