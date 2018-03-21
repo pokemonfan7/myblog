@@ -101,15 +101,12 @@ main{
   margin-right: 16px;
 }
 .main-container div a{
-  float:left;
-  display: flex;
+  display: inline-block;
   width: 200px;
 }
-.main-container div a img{
-  justify-content: center;
-  align-items: center;
-}
 .main-container div p{
+  float:right;
+  width: 250px;
   font-size: 14px;
   color: #777;
 }
