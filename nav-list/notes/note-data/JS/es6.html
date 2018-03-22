@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Alexz Blog</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<nav class="navbar-fixed-top">
+	<div class="container">
+		<div class="fl">
+			<a class="logo" href="../../../../index.html"></a>
+		</div>
+		<ul class="nav-left fl">
+			<li class="fl"><a href="../../../../index.html">首页</a></li>
+			<li class="fl"><a href="../../../works/works.html">我的作品</a></li>
+			<li class="fl"><a href="../../../notes/notes.html">我的笔记</a></li>
+			<li class="fl"><a class="new" href="../../../demos/demos.html">我的demo</a></li>
+		</ul>
+		<ul class="nav-right fr">
+			<li class="fl"><a id="backToTop"></a></li>
+			<li class="fl"><a class="login" href="">登录</a></li>
+			<li class="fl"><a class="register" href="">注册</a></li>
+		</ul>
+	</div>
+</nav>
+<main>
+	<article class="fl">
+		<div class="article-head">
+			<h1>ES6</h1>
+		</div>
+		<div class="article-body">
+			<h3>箭头函数</h3>
+			<p>有几个使用注意点</p>
+			<p>（1）函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。</p>
+			<p>（2）不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。</p>
+			<p>（3）不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用 rest 参数代替。</p>
+			<p>（4）不可以使用yield命令，因此箭头函数不能用作 Generator 函数。</p>
+			<p>this指向的固定化，并不是因为箭头函数内部有绑定this的机制，实际原因是箭头函数根本没有自己的this，导致内部的this就是外层代码块的this。正是因为它没有this，所以也就不能用作构造函数。</p>
+			<p>除了this，以下三个变量在箭头函数之中也是不存在的，指向外层函数的对应变量：arguments、super、new.target。</p>
+			<p>另外，由于箭头函数没有自己的this，所以当然也就不能用call()、apply()、bind()这些方法去改变this的指向。</p>
+			<p>立即执行函数可以写成箭头函数的形式。</p>
+			<pre>(() => {
+  console.log('Welcome to the Internet.');
+})();
+</pre>
+			<p>那些需要使用函数表达式的场合，尽量用箭头函数代替。因为这样更简洁，而且绑定了 this。</p>
+			<pre>
+// bad
+[1, 2, 3].map(function (x) {
+  return x * x;
+});
+// good
+[1, 2, 3].map((x) => {
+  return x * x;
+});
+// best
+[1, 2, 3].map(x => x * x);
+</pre>
+			<p>箭头函数取代Function.prototype.bind，不应再用 self/_this/that 绑定 this。</p>
+			<pre>// bad
+const self = this;
+const boundMethod = function(...params) {
+  return method.apply(self, params);
+}
+
+// acceptable
+const boundMethod = method.bind(this);
+
+// best
+const boundMethod = (...params) => method.apply(this, params);
+</pre>
+			<p>简单的、单行的、不会复用的函数，建议采用箭头函数。如果函数体较为复杂，行数较多，还是应该采用传统的函数写法。</p>
+			<p>所有配置项都应该集中在一个对象，放在最后一个参数，布尔值不可以直接作为参数。</p>
+			<pre>// bad
+function divide(a, b, option = false ) {
+}
+
+// good
+function divide(a, b, { option = false } = {}) {
+}
+</pre>
+			<p>不要在函数体内使用 arguments 变量，使用 rest 运算符（...）代替。因为 rest 运算符显式表明你想要获取参数，而且 arguments 是一个类似数组的对象，而 rest 运算符可以提供一个真正的数组。</p>
+			<pre>// bad
+function concatenateAll() {
+  const args = Array.prototype.slice.call(arguments);
+  return args.join('');
+}
+
+// good
+function concatenateAll(...args) {
+  return args.join('');
+}
+</pre>
+			<p>使用默认值语法设置函数参数的默认值。</p>
+			<pre>// bad
+function handleThings(opts) {
+  opts = opts || {};
+}
+
+// good
+function handleThings(opts = {}) {
+  // ...
+}
+</pre>
+			<p>解构赋值的拷贝是浅拷贝，即如果一个键的值是复合类型的值（数组、对象、函数）、那么解构赋值拷贝的是这个值的引用，而不是这个值的副本。
+				使用数组成员对变量赋值时，优先使用解构赋值。</p>
+			<pre>
+const arr = [1, 2, 3, 4];
+
+// bad
+const first = arr[0];
+const second = arr[1];
+
+// good
+const [first, second] = arr;
+</pre>
+			<p>函数的参数如果是对象的成员，优先使用解构赋值。</p>
+			<pre>// bad
+function getFullName(user) {
+  const firstName = user.firstName;
+  const lastName = user.lastName;
+}
+
+// good
+function getFullName(obj) {
+  const { firstName, lastName } = obj;
+}
+
+// best
+function getFullName({ firstName, lastName }) {
+}
+			</pre>
+			<p>如果函数返回多个值，优先使用对象的解构赋值，而不是数组的解构赋值。这样便于以后添加返回值，以及更改返回值的顺序。</p>
+			<pre>// bad
+function processInput(input) {
+  return [left, right, top, bottom];
+}
+
+// good
+function processInput(input) {
+  return { left, right, top, bottom };
+}
+
+const { left, right } = processInput(input);
+</pre>
+
+			<p>扩展运算符可以用于合并两个对象</p>
+			<p>使用扩展运算符（...）拷贝数组。</p>
+			<pre>// bad
+const len = items.length;
+const itemsCopy = [];
+let i;
+
+for (i = 0; i < len; i++) {
+  itemsCopy[i] = items[i];
+}
+
+// good
+const itemsCopy = [...items];
+</pre>
+			<p>使用 Array.from 方法，将类似数组的对象转为数组。</p>
+			<pre>const foo = document.querySelectorAll('.foo');
+const nodes = Array.from(foo);
+</pre>
+			<h3>Class类</h3>
+			<p>ES6 的类，完全可以看作构造函数的另一种写法。</p>
+			<p>类的数据类型就是函数，类本身就指向构造函数。</p>
+			<p>使用的时候，也是直接对类使用new命令，跟构造函数的用法完全一致。
+				class构造方法constructor里的this指向实例，其他类方法定义在原型上</p>
+			<p>类的内部所有定义的方法，都是不可枚举的（non-enumerable）</p>
+			<p>类和模块的内部，默认就是严格模式，所以不需要使用use strict指定运行模式。只要你的代码写在类或模块之中，就只有严格模式可用。</p>
+			<p>与函数一样，类也可以使用表达式的形式定义。采用 Class 表达式，可以写出立即执行的 Class。</p>
+			<p>类相当于实例的原型，所有在类中定义的方法，都会被实例继承。如果在一个方法前，加上static关键字，就表示该方法不会被实例继承，而是直接通过类来调用，这就称为“静态方法”。 如果静态方法包含this关键字，这个this指的是类，而不是实例，父类的静态方法，可以被子类继承。</p>
+
+			<p>子类必须在constructor方法中调用super方法，否则新建实例时会报错。这是因为子类没有自己的this对象，而是继承父类的this对象，然后对其进行加工。如果不调用super方法，子类就得不到this对象。</p>
+			<p>ES5 的继承，实质是先创造子类的实例对象this，然后再将父类的方法添加到this上面（Parent.apply(this)）。ES6 的继承机制完全不同，实质是先创造父类的实例对象this（所以必须先调用super方法），然后再用子类的构造函数修改this。</p>
+			<p>在子类的构造函数中，只有调用super之后，才可以使用this关键字，否则会报错。这是因为子类实例的构建，是基于对父类实例加工，只有super方法才能返回父类实例。</p>
+			<h3>super</h3>
+			<p>作为函数时，super()只能用在子类的构造函数之中，用在其他地方就会报错。</p>
+			<p>super作为对象时，在普通方法中，指向父类的原型对象；在静态方法中，指向父类。通过super调用父类的方法时，方法内部的this指向子类。</p>
+			<p>由于this指向子类，所以如果通过super对某个属性赋值，这时super就是this，赋值的属性会变成子类实例的属性。</p>
+
+
+			<p>Class 作为构造函数的语法糖，同时有prototype属性和__proto__属性，因此同时存在两条继承链。</p>
+			<p>（1）子类的__proto__属性，表示构造函数的继承，总是指向父类。</p>
+			<p>（2）子类prototype属性的__proto__属性，表示方法的继承，总是指向父类的prototype属性。</p>
+
+			<h3>模块</h3>
+			<p>ES6 模块之中，顶层的this指向undefined，即不应该在顶层代码使用this。</p>
+			<p>export输出的变量就是本来的名字，但是可以使用as关键字重命名。</p>
+			<p>export命令规定的是对外的接口，必须与模块内部的变量建立一一对应关系。</p>
+			<pre>// 写法一
+export var m = 1;
+
+// 写法二
+var m = 1;
+export {m};
+
+// 写法三
+var n = 1;
+export {n as m};
+</pre>
+			<p>export语句输出的接口，与其对应的值是动态绑定关系，即通过该接口，可以取到模块内部实时的值。</p>
+			<pre>export var foo = 'bar';
+setTimeout(() => foo = 'baz', 500);
+</pre>
+			<p>上面代码输出变量foo，值为bar，500 毫秒之后变成baz。</p>
+			<p>import命令输入的变量都是只读的，因为它的本质是输入接口。也就是说，不允许在加载模块的脚本里面，改写接口。但是，如果a是一个对象，改写a的属性是允许的。</p>
+			<p>import命令具有提升效果，会提升到整个模块的头部，首先执行。这种行为的本质是，import命令是编译阶段执行的，在代码运行之前。</p>
+			<p>除了指定加载某个输出值，还可以使用整体加载，即用星号（*）指定一个对象，所有输出值都加载在这个对象上面。</p>
+			<pre>import { area, circumference } from './circle';
+console.log('圆面积：' + area(4));
+//
+import * as circle from './circle';
+console.log('圆面积：' + circle.area(4));
+</pre>
+			<p>下面比较一下默认输出和正常输出。</p>
+			<pre>// 第一组
+export default function crc32() { // 输出
+  // ...
+}
+
+import crc32 from 'crc32'; // 输入
+
+// 第二组
+export function crc32() { // 输出
+  // ...
+};
+
+import {crc32} from 'crc32'; // 输入
+</pre>
+			<p>一个模块只能有一个默认输出，因此export default命令只能使用一次。</p>
+			<p>本质上，export default就是输出一个叫做default的变量或方法，然后系统允许你为它取任意名字。所以，下面的写法是有效的。</p>
+		</div>
+	</article>
+	<aside class="fr">
+		<div class="aside-head">目录</div>
+		<div class="aside-body">
+		</div>
+	</aside>
+</main>
+<script src="./index.js"></script>
+</body>
+</html>

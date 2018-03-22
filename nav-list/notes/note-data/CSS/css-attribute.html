@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Alexz Blog</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<nav class="navbar-fixed-top">
+	<div class="container">
+		<div class="fl">
+			<a class="logo" href="../../../../index.html"></a>
+		</div>
+		<ul class="nav-left fl">
+			<li class="fl"><a href="../../../../index.html">首页</a></li>
+			<li class="fl"><a href="../../../works/works.html">我的作品</a></li>
+			<li class="fl"><a href="../../../notes/notes.html">我的笔记</a></li>
+			<li class="fl"><a class="new" href="../../../demos/demos.html">我的demo</a></li>
+		</ul>
+		<ul class="nav-right fr">
+			<li class="fl"><a id="backToTop"></a></li>
+			<li class="fl"><a class="login" href="">登录</a></li>
+			<li class="fl"><a class="register" href="">注册</a></li>
+		</ul>
+	</div>
+</nav>
+<main>
+	<article class="fl">
+		<div class="article-head">
+			<h1>一些css属性</h1>
+		</div>
+		<div class="article-body">
+		<h3>background-size</h3>
+<p>x y 百分比的值  如果x给了值，y轴默认auto</p>
+<p>contain缩放图片，使其恰好适合背景区；保持宽高比。</p>
+<p>cover  拉大图片，使其完全填满背景区；保持宽高比。</p>
+<p>auto  默认 跟没写一样</p>
+<p>缩写  size 要写在 position 之后 加 /</p>
+<h3>background-attachment </h3>
+<p>控制滚动元素内的背景图片是否随元素滚动而移动。（默认为scroll，固定背景为fixed），可加入background的简写</p>
+<p>background的简写中照片位置的移动（正值为背景图片向右下移动）</p>
+<h3>background-clip &background-origin</h3>
+<p>对于这两个新属性，其对应的keyword是相同的：border-box, padding-box, content-box。</p>
+<p>它们的最根本的区别就是：background-clip 是对背景图片的裁剪，background-origin是对背景图片设置起始点。</p>
+<p>对于background-clip, 其关键字是指将背景图片以border的尺寸、以padding的尺寸，以content的尺寸进行切割，其得到的结果是不完整的背景，也就是其中的一部分(原理与截图差不多)。而且有一点要注意，background-clip的切割是对这个容器背景的切割(包括图片与背景颜色)。</p>
+<p>对于background-origin，其关键字是指将背景图片放置到border范围内，padding范围内、content范围内，其得到的结果是完整的背景(原理与图片的缩放相似)。与background-clip不同的是，它只是单纯设置背景图片的边界，并不会对背景颜色造成影响。</p>
+<h3>内阴影实现3D按钮效果</h3>
+<pre>width:100px;
+height:50px;
+border-radius:7px;
+background:linear-gradient(#4464A8,#375294);
+box-shadow:inset 0 2px 0 rgba(255,255,255,.4),inset 0 -4px rgba(0,0,0,.7);
+</pre>
+<h3>display：box-flex</h3>
+ <p>box-flex：1；分得1份   均分剩余宽度</p>
+<p>box-pack水平对齐方式：start左对齐 | center居中对齐 | end右对齐 | justify分散布局</p>
+<p>box-align垂直对齐方式：start（top） | center（middle） | end（bottom） | baseline基线 | stretch（默认值）</p>
+<p>box-direction：normal | reverse是否反转</p>
+<p>box-orient排列方式：horizontal水平 | vertical垂直          改变pack和align方向</p>
+<h3>display：flex</h3>
+<p> flex：1均分宽度</p>
+<p>flex-grow扩展比率</p>
+<p>剩余空间是正值的时，伸缩项目相对于伸缩容器里其他伸缩项目能分配到空间比例,若没写该属性，则为0,0代表不参与扩展</p>
+<p>flex-shrink缩小比例</p>
+<p>此时剩余空间是不足时都将等比例缩小,0 表示不参加收缩比例,若没写该属性，则为1</p>
+<p>flex-basis</p>
+<p> 在分配空间之前，也已经分得到空间（最小宽度）</p>
+<p>缩写    flex: none 或者 [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]（||后面的属性可不写）</p>
+<p>flex-direction排列方式，决定主轴位置：row | row-reverse | column | column-reverse</p>
+<p>水平，从左起 | 水平从右起 | 垂直从上起 | 垂直从下起</p>
+<p>flex-wrap:  nowrap | wrap | wrap-reverse</p>
+<p>单行 | 换行(宽度不够自动换行) | 换行并反转</p>
+
+<p>justify-content（水平对齐方式）</p>
+               <p> flex-start | flex-end | center | space-between | space-around; </p>
+                <p>左对齐 | 右对齐 | 居中对齐 | 两端对齐(之间的间隔相等) | 每个项目两侧的间隔相等</p>
+<p>align-items（垂直对齐方式）</p>
+                <p>flex-start | flex-end | center | baseline | stretch</p>                <p>起点对齐 | 终点对齐 | 中点对齐 | 基线对齐 | 默认值(未设置高度或设为auto，将占满整个容器的高度) </p>
+<p>align-content （多行对齐方式）</p>
+                <p>注：需要多行才行</p>
+                <p>多根轴线的对齐方式</p>
+               <p> flex-start | flex-end | center | space-between | space-around | stretch</p>
+<p>左对齐 | 右对齐 | 居中对齐 | 两端对齐(之间的间隔相等) | 每个项目两侧的间隔相等 | 轴线占满整个交叉轴</p>
+<p>align-self</p>
+               <p> 允许单个项目有与其他项目不一样的对齐方式</p>
+               <p> auto | flex-start | flex-end | center | baseline | stretch</p>
+                <p>该属性可能取6个值，除了auto，其他都与align-items属性完全一致。</p>
+              <p>  可覆盖align-items属性</p>
+               <p> 默认值auto，表示继承父级元素的align-items，如果没有父级，则则等同于stretch</p>
+                 <p>当这两个属性遇到了flex-direction: column / column-reverse  整个顺序就都变了。</p>
+
+
+<h3>user-modify</h3>
+<p>read-only（只读） | read-write（可读写） | read-write-plaintext-only（内容可读写，但粘贴内容中的富文本格式（如文本的颜色、大小，图片等）会丢失。内容类似于以纯文本显示。）</p>
+<p>标签属性contenteditable=”true”可读写</p>
+<h3>user-select</h3>
+<p>auto（用户可选内容） | none（不可选） | text（可选文本）</p>
+<h3>box-relect：（倒影）</h3>
+<p>direction：above上|below下|left左|right右</p>
+<p>offset：number|%</p>
+<p>mask-box-image（设置倒影的遮罩图像）</p>
+<p>url | linear-gradient | radial-gradient | repeating-linear-gradient | repeating-url</p>
+
+
+<h3>filter</h3>
+<p>-webkit-filter: blur(3px);模糊效果</p>
+       <p>     -webkit-filter: brightness(.5);亮度</p>
+         <p>   filter: contrast(.5);对比度</p>
+           <p> filter: grayscale(.5);灰度</p>
+          <p>  filter: hue-rotate(0deg);色相旋转</p>
+           <p> filter: saturate(.5);反色</p>
+          <p>  filter: sepia(.5);透明度</p>
+           <p> filter: drop-shadow(x y radius color);褐色程度</p>
+            <p>filter: drop-shadow(30px 30px 20px red);阴影（有圆角）</p>
+            <p>box-shadow: 30px 30px 20px red;阴影（无圆角）</p>
+<h3>animation</h3>
+<p>animation-name       名称</p>
+          <p>  animation-duration     执行时间</p>
+          <p>  animation-timing-function     运动类型(ease-in等) </p>
+          <p>  animation-delay       延迟</p>
+          <p>  animation-iteration-count     循环次数  可选  number | infinite</p>
+          <p>  animation-direction     是否反向运动  alternate</p>
+         <p>   animation-fill-mode</p>
+            <p>    设置或检索动画时间之外的状态（想让动画保持突然终止时的状态）</p>
+             <p>   none | forwards | backwards | both</p>
+	<p>不设置 | 结束时 | 开始时 | 结束或开始的状态</p>
+         <p>   animation-play-state     想让动画保持突然终止时的动画状态 running | paused</p>
+
+		</div>
+			
+	</article>
+	<aside class="fr">
+		<div class="aside-head">目录</div>
+		<div class="aside-body">
+		</div>
+	</aside>
+</main>
+<script src="./index.js"></script>
+</body>
+</html>

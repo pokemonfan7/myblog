@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Alexz Blog</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<nav class="navbar-fixed-top">
+	<div class="container">
+		<div class="fl">
+			<a class="logo" href="../../../../index.html"></a>
+		</div>
+		<ul class="nav-left fl">
+			<li class="fl"><a href="../../../../index.html">首页</a></li>
+			<li class="fl"><a href="../../../works/works.html">我的作品</a></li>
+			<li class="fl"><a href="../../../notes/notes.html">我的笔记</a></li>
+			<li class="fl"><a class="new" href="../../../demos/demos.html">我的demo</a></li>
+		</ul>
+		<ul class="nav-right fr">
+			<li class="fl"><a id="backToTop"></a></li>
+			<li class="fl"><a class="login" href="">登录</a></li>
+			<li class="fl"><a class="register" href="">注册</a></li>
+		</ul>
+	</div>
+</nav>
+<main>
+	<article class="fl">
+		<div class="article-head">
+			<h1>三栏布局</h1>
+		</div>
+		<div class="article-body">
+			<h3>固定宽度布局</h3>
+			<p>三个div设置宽度，然后float，边距可以用内嵌一个div或者是设置box-sizing：border-box来防止布局混乱（直接设置边距会导致宽度增加，浮动会下移）</p>
+			<h3>流体布局</h3>
+			<pre>div class="container"
+        div class="left"/div
+        div class="right"/div
+        div class="main"/div
+    /div
+</pre>
+			<p>.left和.right固定宽度并左右浮动，.main不定宽度，设置外边距</p>
+			<h3>BFC三栏布局</h3>
+			<pre>div class="container"
+        div class="left"/div
+        div class="right"/div
+        div class="main"/div
+    /div
+</pre>
+			<p>.left和.right固定宽度并左右浮动，.main不定宽度，设置overflow，成BFC</p>
+			<h3>双飞翼布局</h3>
+			<pre>.content {
+  	    float: left;
+  	    width: 100%;
+        }
+        .main {
+  	    height: 200px;
+  	    margin-left: 110px;
+  	    margin-right: 220px;
+  	    background-color: green;
+        }
+	.left {
+	    float: left;
+	    height: 200px;
+	    width: 100px;
+	    margin-left: -100%;
+	    background-color: red;
+	}
+	.right {
+	    width: 200px;
+	    height: 200px;
+	    float: right;
+	    margin-left: -200px;
+	    background-color: blue;
+	}
+div class="content"
+   div class="main"/div
+/div
+div class="left"/div
+div class="right"/div
+</pre>
+			<h3>圣杯布局</h3>
+			<pre>.container {
+	    margin-left: 120px;
+	    margin-right: 220px;
+	}
+	.main {
+	    float: left;
+	    width: 100%;
+	    height: 300px;
+	    background-color: red;
+	}
+	.left {
+	    float: left;
+	    width: 100px;
+	    height: 300px;
+	    margin-left: -100%;
+	    position: relative;
+	    left: -120px;
+	    background-color: blue;
+	}
+	.right {
+	    float: left;
+	    width: 200px;
+	    height: 300px;
+	    margin-left: -200px;
+	    position: relative;
+	    right: -220px;
+	    background-color: green;
+	}
+div class="container"
+	div class="main"/div
+	div class="left"/div
+	div class="right"/div
+/div
+</pre>
+			<h3>flex布局</h3>
+			<pre>div class="container"
+	div class="main"/div
+	div class="left"/div
+	div class="right"/div
+    /div
+</pre>
+			<p>.left和.right固定宽度，.left设置order：-1排在前面，.main设置flex：1</p>
+			<h3>table布局</h3>
+			<pre>div class="container"
+	div class="left"/div
+	div class="main"/div
+	div class="right"/div
+    /div
+</pre>
+			<p>.left.right.main设置display：table-cell，.left.right固定宽度，缺点：无法设置间距</p>
+			<h3>绝对定位布局</h3>
+			<pre>div class="container"
+	div class="main"/div
+	div class="left"/div
+	div class="right"/div
+/div
+</pre>
+			<p>.main用margin：0  x居中，x为留给.left.right的宽度，.left.right绝对定位到左上，右上（left：0，top：0，right：0）</p>
+		</div>
+	</article>
+	<aside class="fr">
+		<div class="aside-head">目录</div>
+		<div class="aside-body">
+		</div>
+	</aside>
+</main>
+<script src="./index.js"></script>
+</body>
+</html>

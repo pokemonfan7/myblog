@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Alexz Blog</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<nav class="navbar-fixed-top">
+	<div class="container">
+		<div class="fl">
+			<a class="logo" href="../../../../index.html"></a>
+		</div>
+		<ul class="nav-left fl">
+			<li class="fl"><a href="../../../../index.html">首页</a></li>
+			<li class="fl"><a href="../../../works/works.html">我的作品</a></li>
+			<li class="fl"><a href="../../../notes/notes.html">我的笔记</a></li>
+			<li class="fl"><a class="new" href="../../../demos/demos.html">我的demo</a></li>
+		</ul>
+		<ul class="nav-right fr">
+			<li class="fl"><a id="backToTop"></a></li>
+			<li class="fl"><a class="login" href="">登录</a></li>
+			<li class="fl"><a class="register" href="">注册</a></li>
+		</ul>
+	</div>
+</nav>
+<main>
+	<article class="fl">
+		<div class="article-head">
+			<h1>垂直居中的几种方式</h1>
+		</div>
+		<div class="article-body">
+<pre>style
+div{width:200px;height:200px;border:1px solid #000;text-align:center;
+	vertical-align:middle;display:table-cell;}
+span{vertical-align:middle;}
+div
+span17:34:55/span
+/div
+</pre>
+			<pre>style
+div{width:200px;height:200px;border:1px solid #000;text-align:center;}
+i{display:inline-block;height:100%;vertical-align:middle;}
+span{vertical-align:middle;}
+div
+i/i
+span17:34:55/span
+/div
+</pre>
+			<h3>确定盒子宽高,利用负外边距</h3>
+			<pre>.parent{
+position:relative;
+width:200px;
+height:200px;
+border:1px solid #000;
+}
+.child{
+position:absolute;
+left:50%;
+top:50%;
+width:100px;
+height:80px;
+margin-top:-40px;
+margin-left:-50px;
+border:1px solid #000;
+}</pre>
+			<h3>position & transform: translate(-50%, -50%) 实现块元素百分比下居中</h3>
+			<pre>.parent{position: relative;}
+.child{
+position: absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+}
+			</pre>
+			<h3>利用flexbox</h3>
+			<pre>.parent{
+　　　　justify-content:center;
+　　　　align-items:center;
+　　　　display: flex;
+　　}
+			</pre>
+			<h3>利用定位与margin：auto</h3>
+			<pre>.parent{
+               width: 600px;
+               height: 400px;
+               background: red;
+               position: relative;
+          }
+          .children{
+               width: 200px;
+               height: 200px;
+               position: absolute;
+               top: 0;
+               left: 0;
+               bottom: 0;
+               right: 0;
+               margin: auto;
+               background: black;
+          }
+</pre>
+
+		</div>
+	</article>
+	<aside class="fr">
+		<div class="aside-head">目录</div>
+		<div class="aside-body">
+		</div>
+	</aside>
+</main>
+<script src="./index.js"></script>
+</body>
+</html>
