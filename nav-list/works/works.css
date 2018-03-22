@@ -94,19 +94,23 @@ main{
 }
 .main-container div{
   float: left;
-  width: 460px;
+  width: 100%;
+  max-width: 460px;
   padding: 10px;
+  box-sizing: border-box;
 }
 .main-container div:nth-child(2n){
   margin-right: 16px;
 }
-.main-container div a{
-  display: inline-block;
-  width: 200px;
-}
 .main-container div p{
-  float:right;
-  width: 250px;
+  width: 100%;
+  max-width: 460px;
   font-size: 14px;
   color: #777;
 }
+.main-container div p a{
+  float: left;
+  width: 200px;
+  margin-right: 5px;
+}
+

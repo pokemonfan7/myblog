@@ -131,6 +131,7 @@ main{
 #list-body-container li>a{
   display: inline-block;
   margin: 5px 0;
+  padding-left: 8px;
   font-weight: 600;
   font-size: 16px;
   color: #2e3135;
