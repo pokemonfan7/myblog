@@ -86,6 +86,7 @@ nav{
   background-color: #62c292;
 }
 .nav-right .register{
+  box-sizing: border-box;
   margin-left: 10px;
   color: #62c292;
   border: 1px solid #62c292;

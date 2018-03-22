@@ -6,7 +6,7 @@ aJax.onreadystatechange=function(){
         console.log(aJax.responseText);
         var blogList=JSON.parse(aJax.responseText);
         console.log(blogList);
-        blogList.forEach(function(v){
+        blogList.reverse().forEach(function(v){
             var oLi=document.createElement("li");
             var oA=document.createElement("a");
             var oP=document.createElement("p");
