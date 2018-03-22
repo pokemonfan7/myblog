@@ -30,10 +30,22 @@
 <main>
 	<article class="fl">
 		<div class="article-head">
-			<h1></h1>
+			<h1>BFC（块级格式化上下文）</h1>
 		</div>
 		<div class="article-body">
-
+			<h3>BFC块级格式化上下文</h3>
+			<p>就是一个相对独立的布局环境，它内部元素的布局不受外面布局的影响。它可以通过以下任何一种方式来创建： </p>
+			<p>float 的值不为 none </p>
+			<p>position 的值不为 static 或者 relative </p>
+			<p>display 的值为 table-cell , table-caption , inline-block , flex , 或者 inline-flex 中的其中一个</p>
+			<p>overflow 的值不为 visible</p>
+			<p>约束规则：</p>
+			<p>1、内部的Box会在垂直方向上一个接一个的放置</p>
+			<p>2、垂直方向上的距离由margin决定。（完整的说法是：属于同一个BFC的两个相邻Box的margin会发生重叠，与方向无关。）</p>
+			<p>3、每个元素的左外边距与包含块的左边界相接触（从左向右），即使浮动元素也是如此。（这说明BFC中子元素不会超出他的包含块，而position为absolute的元素可以超出他的包含块边界）</p>
+			<p>4、BFC的区域不会与float的元素区域重叠</p>
+			<p>5、计算BFC的高度时，浮动子元素也参与计算</p>
+			<p>6、BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面元素，反之亦然</p>
 		</div>
 	</article>
 	<aside class="fr">

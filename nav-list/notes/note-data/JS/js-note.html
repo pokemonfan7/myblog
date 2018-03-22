@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Alexz Blog</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<nav class="navbar-fixed-top">
+	<div class="container">
+		<div class="fl">
+			<a class="logo" href="../../../../index.html"></a>
+		</div>
+		<ul class="nav-left fl">
+			<li class="fl"><a href="../../../../index.html">首页</a></li>
+			<li class="fl"><a href="../../../works/works.html">我的作品</a></li>
+			<li class="fl"><a href="../../../notes/notes.html">我的笔记</a></li>
+			<li class="fl"><a class="new" href="../../../demos/demos.html">我的demo</a></li>
+		</ul>
+		<ul class="nav-right fr">
+			<li class="fl"><a id="backToTop"></a></li>
+			<li class="fl"><a class="login" href="">登录</a></li>
+			<li class="fl"><a class="register" href="">注册</a></li>
+		</ul>
+	</div>
+</nav>
+<main>
+	<article class="fl">
+		<div class="article-head">
+			<h1>一些js笔记</h1>
+		</div>
+		<div class="article-body">
+			<h3> currentstyle 、getComputedStyle </h3>
+			<p>IE：currentstyle</p>
+			<p>others：window.getComputedStyle(elem1, null) </p>
+			<p>（1）style 只能获取行间样式，但能设置样式。</p>
+			<p>（2）getComputedStyle 和 currentStyle 能够获取行间样式/非行间样式/浏览器默认样式，但存在浏览器兼容问题，且不能设置样式。</p>
+
+			<h3>取消事件冒泡</h3>
+			<p>IE：event.cancelBubble=true</p>
+			<p>others：event.stopPropagation（）</p>
+			<h3>取消默认行为</h3>
+			<p>IE：event.returnValue = false</p>
+			<p>others：event.preventDefault（）<p>
+			<h3>事件委托</h3>
+			<p>var ev = ev || window.event; </p>
+			<p>var target = ev.target || ev.srcElement; </p>
+			<h3>事件绑定 </h3>
+			<p>IE:</p>
+			<p>attachEvent(事件名称, 函数)，绑定事件处理函数 </p>
+			<p>detachEvent(事件名称, 函数)，解除绑定</p>
+			<p>DOM2</p>
+			<p>addEventListener(事件名称,函数, 捕获) </p>
+			<p>removeEventListener(事件名称, 函数, 捕获) </p>
+			<p>绑定匿名函数无法解除</p>
+			<p>String包装类型</p>
+			<p>concat（）连接字符</p>
+			<p>trim（）删除字符开头和结尾的空格，返回字符副本</p>
+			<p>获取类</p>
+			<p>charAt(index)指定字符</p>
+			<p>charCodeAt指定字符编码、fromCharCode执行相反操作</p>
+			<p>查找类</p>
+			<p>indexOf()、lastIndexOf()、search()正则--查找</p>
+			<p>match、replace—匹配和替换</p>
+			<p>截取类</p>
+			<p>slice(1,3)、substr(1,3)、substring(1,3) </p>
+			<p>substr的第二个参数是返回字符的个数，slice、substring则是index(0开始) </p>
+			<p>3个都返回基本数据类型的字符串值，对原始值无影响</p>
+			<p>其他</p>
+			<p>split—根据分隔符，拆分数组</p>
+			<p>toLowerCase、toUpperCase</p>
+			<p>match（）、search（）、replace（）用于在字符串中匹配模式的方法</p>
+			<p>localeCompare（参数）比较字符串大小，参数排在前返回1</p>
+			<h3>数组</h3>
+			<p>从尾部添加push、从尾部删除pop、从头部删除shift、从头部添加unshift</p>
+			<p>转换、获取</p>
+			<p>splice（开始位置，长度，元素）   先删除一段元素，再添加一段元素</p>
+			<p>join   与split用法相反</p>
+			<p>slice</p>
+			<p>arr1.concat(arr2)数组连接</p>
+			<p>+连接后的的类型是string</p>
+			<p>es5数组方法：通过 . 来调用</p>
+			<p>forEach（数组元素，元素索引，数组）</p>
+			<p>map（每个数组元素），返回新数组，不修改调用的函数</p>
+			<p>reduce() 方法接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。</p>
+			<p>filter（），跳过稀疏数组中缺少的元素，返回数组总是稠密的。新数组中的元素是通过检查指定数组中符合条件的所有元素。返回布尔值</p>
+			<p>every（），当且仅当针对数组中的所有元素调用判定函数都返回true，才返回true</p>
+			<p>some（），当数组中至少有一个元素调用判定函数返回true，就返回true</p>
+			<p>indexOf（）、lastIndexOf（）搜索整个数组中具有给定值的元素，返回找到的第一个元素的索引，若无则返回-1</p>
+			<h3>判定类型</h3>
+			<p>Array.isArray（）</p>
+			<p>Object.prototype.toString.call(obj) </p>
+			<pre>console.log(Object.prototype.toString.call(123)) //[object Number]
+console.log(Object.prototype.toString.call('123')) //[object String]
+console.log(Object.prototype.toString.call(undefined)) //[object Undefined]
+console.log(Object.prototype.toString.call(true)) //[object Boolean]
+console.log(Object.prototype.toString.call({})) //[object Object]
+console.log(Object.prototype.toString.call([])) //[object Array]
+console.log(Object.prototype.toString.call(function(){})) //[object Function]
+</pre>
+			<p>typeof检测基本类型：number、string、boolean、null（“object“）、undefined、function（”function“）</p>
+			<p>instanceof 运算符用来测试一个对象在其原型链中是否存在一个构造函数的 prototype 属性。</p>
+			<p>引用类型：Object、Array、Date、RegExp、Function、基本包装类型（Boolean、Number、String）、单体内置对象（Global、Math）</p>
+
+			<h3>DOM操作</h3>
+			<p>创建新节点：createDocumentFragment、createElement、createTextNode</p>
+			<p>添加、移除、替换、插入：</p>
+			<p>appendChild（1.先移出父级  2.添加到新的父级）、removeChild、replaceChild、insertBefore</p>
+			<p>复制节点：cloneNode（true），true为深复制</p>
+			<p>获取、设置（修改）、删除属性：getAttribute、setAttribute、removeAttribute</p>
+			<p>获取子节点</p>
+			<p>firstChild、lastChild、childNodes[0]（childNodes.item(0)）会获取空白节点，不推荐</p>
+			<p>firstElementChild、lastElementChild、children[0]取代上述属性</p>
+			<p>新增API，可以通过Document和Element类型的实例调用</p>
+			<p>querySelector()、querySelectorAll()接收一个CSS选择符参数</p>
+			<p>querySelectorAll()返回一个NodeList对象，可以用[]和item()取得元素</p>
+			<h3>let、const</h3>
+			<p>ES5中没有块级作用域，可以用闭包模仿</p>
+			<p>ES6中用let定义变量，在for、while、if中实现块级作用域</p>
+			<p>const，变量指向的那个内存地址不得改动，对于基本类型来说，就是常量，对于引用类型，则是指针不变，对象或数组的内容可变。</p>
+
+
+			<h3>apply&call</h3>
+			<p>call和apply方法的第一个参数都是要传入给当前对象的对象，及函数内部的this。后面的参数都是传递给当前对象的参数。apply()是函数对象的一个方法，它的作用是改变函数的调用对象，它的第一个参数就表示改变后的调用这个函数的对象。因此，this指的就是这第一个参数。</p>
+
+			<pre> var func=new function(){this.a="func"}
+    var myfunc=function(x){
+        var a="myfunc";
+        alert(this.a);
+        alert(x);
+    }
+    myfunc.call(func,"var");
+//func和var
+
+</pre>
+			<p>对于apply和call两者在作用上是相同的，但两者在参数上有区别的。</p>
+			<p>对于第一个参数意义都一样，但对第二个参数，apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，而call则作为call的参数传入（从第二个参数开始）。</p>
+			<p>如 func.call(func1,var1,var2,var3)对应的apply写法为：func.apply(func1,[var1,var2,var3]) </p>
+			<p>同时使用apply的好处是可以直接将当前函数的arguments对象作为apply的第二个参数传入</p>
+
+			<h3>同步与异步</h3>
+			<p>js只有一条主线程</p>
+			<p>同步任务指的是，在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务；</p>
+			<p>异步任务指的是，不进入主线程、而进入"任务队列"（task queue）的任务，只有等主线程任务执行完毕，"任务队列"开始通知主线程，请求执行任务，该任务才会进入主线程执行。</p>
+			<p>具体来说，异步运行机制如下：</p>
+			<p>（1）所有同步任务都在主线程上执行，形成一个执行栈（execution context stack）。</p>
+			<p>（2）主线程之外，还存在一个"任务队列"（task queue）。只要异步任务有了运行结果，就在"任务队列"之中放置一个事件。</p>
+			<p>（3）一旦"执行栈"中的所有同步任务执行完毕，系统就会读取"任务队列"，看看里面有哪些事件。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。</p>
+			<p>（4）主线程不断重复上面的第三步。</p>
+
+			<p>也就是说如果某个microtask任务被推入到执行中，那么当主线程任务执行完成后，会循环调用该队列任务中的下一个任务来执行，直到该任务队列到最后一个任务为止。而事件循环每次只会入栈一个macrotask,主线程执行完成该任务后又会检查microtasks队列并完成里面的所有任务后再执行macrotask的任务。</p>
+			<p>整体的js代码这个macrotask先执行，同步代码执行完后有microtask执行microtask，没有microtask执行下一个macrotask，如此往复循环至结束</p>
+			<p>microtasks: process.nextTick, Promises, Object.observe, MutationObserver</p>
+			<p>macrotasks: script(整体代码),setTimeout, setInterval, setImmediate, I/O, UI rendering </p>
+
+
+		</div>
+	</article>
+	<aside class="fr">
+		<div class="aside-head">目录</div>
+		<div class="aside-body">
+		</div>
+	</aside>
+</main>
+<script src="./index.js"></script>
+</body>
+</html>
