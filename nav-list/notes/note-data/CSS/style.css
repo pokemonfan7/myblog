@@ -100,7 +100,7 @@ main{
   margin-top: 70px;
 }
 article{
-  width: 640px;
+  max-width: 640px;
   background: #fff;
 }
 aside{
