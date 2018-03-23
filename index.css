@@ -60,6 +60,7 @@ nav{
   background: url(./img/1.jpg) 0 0 no-repeat;
 }
 .nav-left li{
+  position: relative;
   margin: 0 20px;
 }
 .nav-left li a{
@@ -77,17 +78,17 @@ nav{
   width: 70px;
   height: 40px;
   border-radius: 5px;
-  margin-top: 10px;
   text-align: center;
   line-height: 40px;
 }
 .nav-right .login{
+  margin-top: 10px;
   color: #fff;
   background-color: #62c292;
 }
 .nav-right .register{
   box-sizing: border-box;
-  margin-left: 10px;
+  margin: 10px 10px 0;
   color: #62c292;
   border: 1px solid #62c292;
 }
@@ -95,8 +96,7 @@ nav{
 /*main*/
 main{
   max-width: 980px;
-  margin:0 auto;
-  margin-top: 70px;
+  margin:70px auto 0;
 }
 .work-list{
   width: 640px;
@@ -156,23 +156,60 @@ main{
   margin: 0 4px;
 }
 .aside-body figure{
+  height:170px;
   position: relative;
   margin: 5px;
   border-bottom: 1px solid #ccc;
 }
 .aside-body figure img{
+  float: left;
   width: 135px;
   height: 170px;
+  margin-right: 10px;
 }
 .aside-body figure figcaption{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 170px;
   margin-left: 5px;
   font-size: 13px;
   line-height: 20px;
   color: #555;
 }
 
-
+@media only screen and (max-width:960px){
+  .work-list{
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+  }
+  .work-aside{
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+  }
+}
+@media only screen and (max-width:680px){
+  .nav-left li{
+    margin: 0 10px;
+  }
+  .work-list{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+  }
+  .work-aside{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+  }
+}
+@media only screen and (max-width:400px){
+  .nav-left li{
+    margin: 0 4px;
+  }
+  .nav-right{
+    display: none;
+  }
+}

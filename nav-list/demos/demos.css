@@ -85,17 +85,17 @@ nav{
   width: 70px;
   height: 40px;
   border-radius: 5px;
-  margin-top: 10px;
   text-align: center;
   line-height: 40px;
 }
 .nav-right .login{
+  margin-top: 10px;
   color: #fff;
   background-color: #62c292;
 }
 .nav-right .register{
   box-sizing: border-box;
-  margin-left: 10px;
+  margin: 10px 10px 0;
   color: #62c292;
   border: 1px solid #62c292;
 }
@@ -632,4 +632,19 @@ main{
 }
 #sec9 .box:hover .text{
   opacity:1;
+}
+
+
+@media only screen and (max-width:680px){
+  .nav-left li{
+    margin: 0 10px;
+  }
+}
+@media only screen and (max-width:400px){
+  .nav-left li{
+    margin: 0 4px;
+  }
+  .nav-right{
+    display: none;
+  }
 }
