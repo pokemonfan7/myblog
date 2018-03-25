@@ -3,31 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fe7bd35f-a509-48f7-9d3c-4b1b19c6c99d" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.css" afterPath="$PROJECT_DIR$/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/demos/demos.css" afterPath="$PROJECT_DIR$/nav-list/demos/demos.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/demos/demos.html" afterPath="$PROJECT_DIR$/nav-list/demos/demos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/bfc.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/bfc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/center.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/center.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/css-attribute.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/css-attribute.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/sanlan.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/sanlan.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/style.css" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/JS/es6.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/JS/es6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/JS/js-note.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/JS/js-note.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/JS/js-note2.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/JS/js-note2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/JS/promise&amp;async.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/JS/promise&amp;async.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/JS/react-optimize.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/JS/react-optimize.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/JS/style.css" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/JS/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/notes-CSS.css" afterPath="$PROJECT_DIR$/nav-list/notes/notes-CSS.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/notes-CSS.html" afterPath="$PROJECT_DIR$/nav-list/notes/notes-CSS.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/notes-HTML.css" afterPath="$PROJECT_DIR$/nav-list/notes/notes-HTML.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/notes-HTML.html" afterPath="$PROJECT_DIR$/nav-list/notes/notes-HTML.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/notes-JS.css" afterPath="$PROJECT_DIR$/nav-list/notes/notes-JS.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/JS/新建文件夹/格式.html" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/JS/新建文件夹/格式.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/notes-JS.html" afterPath="$PROJECT_DIR$/nav-list/notes/notes-JS.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/notes.css" afterPath="$PROJECT_DIR$/nav-list/notes/notes.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/notes.html" afterPath="$PROJECT_DIR$/nav-list/notes/notes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/works/works.css" afterPath="$PROJECT_DIR$/nav-list/works/works.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/works/works.html" afterPath="$PROJECT_DIR$/nav-list/works/works.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,7 +18,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf>
+      <file leaf-file-name="notes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nav-list/notes/notes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="43" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notes-JS.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nav-list/notes/notes-JS.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -70,9 +69,7 @@
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/promise&amp;async.html" />
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/新建文件夹/11.html" />
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/11.html" />
-        <option value="$PROJECT_DIR$/nav-list/notes/notes-JS.html" />
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/CSS/bfc.html" />
-        <option value="$PROJECT_DIR$/nav-list/notes/notes.html" />
         <option value="$PROJECT_DIR$/nav-list/notes/notes-CSS.html" />
         <option value="$PROJECT_DIR$/index.css" />
         <option value="$PROJECT_DIR$/nav-list/demos/demos/ihover/2.html" />
@@ -85,6 +82,10 @@
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/CSS/style.css" />
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/style.css" />
         <option value="$PROJECT_DIR$/nav-list/notes/notes.css" />
+        <option value="$USER_HOME$/Desktop/异步操作.js" />
+        <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/新建文件夹/格式.html" />
+        <option value="$PROJECT_DIR$/nav-list/notes/notes.html" />
+        <option value="$PROJECT_DIR$/nav-list/notes/notes-JS.html" />
       </list>
     </option>
   </component>
@@ -161,11 +162,13 @@
       <workItem from="1521767988310" duration="4506000" />
       <workItem from="1521781313408" duration="263000" />
       <workItem from="1521781674935" duration="241000" />
+      <workItem from="1521945349957" duration="483000" />
+      <workItem from="1521945852706" duration="84000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16377000" />
+    <option name="totallyTimeSpent" value="16944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -206,7 +209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2324">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="93" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -214,7 +216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2632">
           <caret line="94" column="1" lean-forward="false" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -222,7 +223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -291,13 +291,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/11.html" />
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/notes-JS.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="63" column="12" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/CSS/bfc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -309,13 +302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/notes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -374,7 +360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="93" column="14" lean-forward="true" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -382,7 +367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1614">
           <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -390,7 +374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="94" column="1" lean-forward="false" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -398,6 +381,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="93" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/异步操作.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/新建文件夹/格式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="80" column="5" lean-forward="false" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav-list/notes/notes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav-list/notes/notes-JS.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding />
         </state>
       </provider>
