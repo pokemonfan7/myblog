@@ -64,6 +64,46 @@ window.onload=function()
 
     };
 
+
+//登录注册
+    var login=document.getElementById("login");
+    var register=document.getElementById("register");
+    var dialogLogin=document.getElementById("dialog-login");
+    var dialogRegister=document.getElementById("dialog-register");
+    var loginForm=document.getElementById("login-form");
+    var registerForm=document.getElementById("register-form");
+    var back=document.getElementById("back");
+    login.addEventListener("click",loginDialog);
+    register.addEventListener("click",registerDialog);
+    dialogLogin.addEventListener("click",toggleDialog);
+    dialogRegister.addEventListener("click",toggleDialog);
+    back.addEventListener("click",outDialog);
+    function loginDialog(e){
+        e.preventDefault();
+        back.style.display="block";
+        loginForm.style.display="block";
+    }
+    function registerDialog(e){
+        e.preventDefault();
+        back.style.display="block";
+        registerForm.style.display="block";
+    }
+    function toggleDialog(e){
+        e.preventDefault();
+        if(loginForm.style.display==="block"){
+            loginForm.style.display="none";
+            registerForm.style.display="block";
+        }else{
+            loginForm.style.display="block";
+            registerForm.style.display="none";
+        }
+    }
+    function outDialog(){
+        back.style.display="none";
+        loginForm.style.display="none";
+        registerForm.style.display="none";
+    }
+
 };
 
 
