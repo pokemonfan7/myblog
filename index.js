@@ -158,30 +158,55 @@ window.onload=function()
             oUl.appendChild(oLi);
         }
     })();
+
+    //dialog一直居中
+    function center(obj){
+        var screenHeight=document.documentElement.clientHeight;
+        var screenWidth=document.documentElement.clientWidth;
+        var scrollTop=document.documentElement.scrollTop;
+        var objLeft=(screenWidth-parseInt(window.getComputedStyle(obj).width))/2;
+        var objTop=(screenHeight-parseInt(window.getComputedStyle(obj).height))/2+scrollTop;
+        obj.style.left=objLeft+"px";
+        obj.style.top=objTop+"px";
+    }
+    function backCenter(obj){
+        var scrollTop=document.documentElement.scrollTop;
+        obj.style.top=scrollTop+"px";
+    }
+    backCenter(back);
+    center(loginForm);
+    center(registerForm);
+    var loginFormWidth=parseInt(window.getComputedStyle(loginForm).width);
+    var loginFormHeight=parseInt(window.getComputedStyle(loginForm).height);
+    var registerFormWidth=parseInt(window.getComputedStyle(registerForm).width);
+    var registerFormHeight=parseInt(window.getComputedStyle(registerForm).height);
+    window.addEventListener("scroll",function(){
+        var screenHeight=document.documentElement.clientHeight;
+        var screenWidth=document.documentElement.clientWidth;
+        var scrollTop=document.documentElement.scrollTop;
+        var loginFormLeft=(screenWidth-loginFormWidth)/2;
+        var loginFormTop=(screenHeight-loginFormHeight)/2+scrollTop;
+        var registerFormLeft=(screenWidth-registerFormWidth)/2;
+        var registerFormTop=(screenHeight-registerFormHeight)/2+scrollTop;
+        back.style.top=scrollTop+"px";
+        loginForm.style.left=loginFormLeft+"px";
+        loginForm.style.top=loginFormTop+"px";
+        registerForm.style.left=registerFormLeft+"px";
+        registerForm.style.top=registerFormTop+"px";
+    });
+    window.addEventListener("resize",function(){
+        var screenHeight=document.documentElement.clientHeight;
+        var screenWidth=document.documentElement.clientWidth;
+        var scrollTop=document.documentElement.scrollTop;
+        var loginFormLeft=(screenWidth-loginFormWidth)/2;
+        var loginFormTop=(screenHeight-loginFormHeight)/2+scrollTop;
+        var registerFormLeft=(screenWidth-registerFormWidth)/2;
+        var registerFormTop=(screenHeight-registerFormHeight)/2+scrollTop;
+        back.style.top=scrollTop+"px";
+        loginForm.style.left=loginFormLeft+"px";
+        loginForm.style.top=loginFormTop+"px";
+        registerForm.style.left=registerFormLeft+"px";
+        registerForm.style.top=registerFormTop+"px";
+    });
 };
-//dialog一直居中
-// function center(obj){
-//     var screenHeight=document.documentElement.clientHeight;
-//     var screenWidth=document.documentElement.clientWidth;
-//     var scrollTop=document.documentElement.scrollTop;
-//     var objLeft=(screenWidth-parseInt(window.getComputedStyle(obj).width))/2;
-//     var objTop=(screenHeight-parseInt(window.getComputedStyle(obj).height))/2+scrollTop;
-//     obj.style.left=objLeft+"px";
-//     obj.style.top=objTop+"px";
-//     obj.style.display="block";
-//
-//     // $(window).resize(function () {
-//     //     screenHeight=$(window).height();
-//     //     screenWidth=$(window).width();
-//     //     scrollTop=$(document).scrollTop();
-//     //     objLeft=(screenWidth-obj.width())/2;
-//     //     objTop=(screenHeight-obj.height())/2+scrollTop;
-//     //     obj.css({left:objLeft+"px",top:objTop+"px","display":"block"});
-//     // });
-//     //
-//
-// }
-//
-// var ww=document.getElementById("login-form");
-// center(ww);
 
