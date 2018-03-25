@@ -44,7 +44,7 @@
 	})
 }
 ajax("https://5ab1cc2362a6ae001408c195.mockapi.io/blog-list")
-    .then(function(res){console.log(res.currentTarget.responseText)})
+    .then(function(res){console.log(res.target.responseText)})
     .catch(function(err){console.log(err)});</pre>
 	<p>每隔一秒输出数字</p>
 			<pre>const tasks=[];

@@ -6,6 +6,7 @@ aJax.onreadystatechange=function(){
         console.log(aJax.responseText);
         var blogList=JSON.parse(aJax.responseText);
         console.log(blogList);
+        window.history.pushState("","","/ajaxGetData");
         blogList.reverse().forEach(function(v){
             var oLi=document.createElement("li");
             var oA=document.createElement("a");
