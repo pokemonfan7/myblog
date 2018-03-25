@@ -160,28 +160,28 @@ window.onload=function()
     })();
 };
 //dialog一直居中
-function center(obj){
-    var screenHeight=document.documentElement.clientHeight;
-    var screenWidth=document.documentElement.clientWidth;
-    var scrollTop=document.documentElement.scrollTop;
-    var objLeft=(screenWidth-parseInt(window.getComputedStyle(obj).width))/2;
-    var objTop=(screenHeight-parseInt(window.getComputedStyle(obj).height))/2+scrollTop;
-    obj.style.left=objLeft+"px";
-    obj.style.top=objTop+"px";
-    obj.style.display="block";
-
-    // $(window).resize(function () {
-    //     screenHeight=$(window).height();
-    //     screenWidth=$(window).width();
-    //     scrollTop=$(document).scrollTop();
-    //     objLeft=(screenWidth-obj.width())/2;
-    //     objTop=(screenHeight-obj.height())/2+scrollTop;
-    //     obj.css({left:objLeft+"px",top:objTop+"px","display":"block"});
-    // });
-    //
-
-}
-
-var ww=document.getElementById("login-form");
-center(ww);
+// function center(obj){
+//     var screenHeight=document.documentElement.clientHeight;
+//     var screenWidth=document.documentElement.clientWidth;
+//     var scrollTop=document.documentElement.scrollTop;
+//     var objLeft=(screenWidth-parseInt(window.getComputedStyle(obj).width))/2;
+//     var objTop=(screenHeight-parseInt(window.getComputedStyle(obj).height))/2+scrollTop;
+//     obj.style.left=objLeft+"px";
+//     obj.style.top=objTop+"px";
+//     obj.style.display="block";
+//
+//     // $(window).resize(function () {
+//     //     screenHeight=$(window).height();
+//     //     screenWidth=$(window).width();
+//     //     scrollTop=$(document).scrollTop();
+//     //     objLeft=(screenWidth-obj.width())/2;
+//     //     objTop=(screenHeight-obj.height())/2+scrollTop;
+//     //     obj.css({left:objLeft+"px",top:objTop+"px","display":"block"});
+//     // });
+//     //
+//
+// }
+//
+// var ww=document.getElementById("login-form");
+// center(ww);
 
