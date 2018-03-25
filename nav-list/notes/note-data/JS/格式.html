@@ -17,10 +17,6 @@
 		#back{
 			display:none;
 			position:absolute;
-			top:0;
-			bottom:0;
-			left: 0;
-			right:0;
 			width:100%;
 			height:100%;
 			z-index:1000;
@@ -30,11 +26,11 @@
 #login-form, #register-form{
 	display:none;
 	position:absolute;
-	top:0;
-	bottom:0;
-	left: 0;
-	right:0;
-	margin: auto;
+	/*top:0;*/
+	/*bottom:0;*/
+	/*left: 0;*/
+	/*right:0;*/
+	/*margin: auto;*/
 	width:310px;
 	box-shadow:0 1px 11px rgba(0,0,0,0.27);
 	padding:50px 30px;
@@ -120,6 +116,14 @@
 		<div class="sec4"><span class="fl">有帐号？</span><a id="dialog-register" class="fl" href="">登录</a><a class="fr" href="">忘记密码</a></div>
 	</div>
 </form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <script>
 	var login=document.getElementById("login");
 	var register=document.getElementById("register");
@@ -158,6 +162,50 @@
       loginForm.style.display="none";
       registerForm.style.display="none";
   }
+  function center(obj){
+      var screenHeight=document.documentElement.clientHeight;
+      console.log(screenHeight);
+      var screenWidth=document.documentElement.clientWidth;
+      console.log(screenWidth);
+      var scrollTop=document.documentElement.scrollTop;
+      console.log(scrollTop);
+      var objLeft=(screenWidth-parseInt(window.getComputedStyle(obj).width))/2;
+      console.log(window.getComputedStyle(obj).width);
+      console.log(objLeft);
+      var objTop=(screenHeight-parseInt(window.getComputedStyle(obj).height))/2+scrollTop;
+      console.log(window.getComputedStyle(obj).height);
+      obj.style.left=objLeft+"px";
+      obj.style.top=objTop+"px";
+      obj.style.display="block";
+      // $(window).resize(function () {
+      //     screenHeight=$(window).height();
+      //     screenWidth=$(window).width();
+      //     scrollTop=$(document).scrollTop();
+      //     objLeft=(screenWidth-obj.width())/2;
+      //     objTop=(screenHeight-obj.height())/2+scrollTop;
+      //     obj.css({left:objLeft+"px",top:objTop+"px","display":"block"});
+      // });
+      //
+		  var w=parseInt(window.getComputedStyle(obj).width);
+		  var h=parseInt(window.getComputedStyle(obj).height);
+      window.onscroll=(function(obj){
+          var screenHeight=document.documentElement.clientHeight;
+          console.log(screenHeight);
+          var screenWidth=document.documentElement.clientWidth;
+          console.log(screenWidth);
+          var scrollTop=document.documentElement.scrollTop;
+          console.log(scrollTop);
+          var objLeft=(screenWidth-w)/2;
+          console.log(objLeft);
+          var objTop=(screenHeight-h)/2+scrollTop;
+          obj.style.left=objLeft+"px";
+          obj.style.top=objTop+"px";
+          obj.style.display="block";
+      })(obj);
+  }
+  var ww=document.getElementById("login-form");
+  center(ww);
+
 </script>
 <script src="./index.js"></script>
 </body>
