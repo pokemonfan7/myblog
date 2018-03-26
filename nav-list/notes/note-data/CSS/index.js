@@ -1,4 +1,4 @@
-window.onload=function()
+(function()
 {
     var aBtn=document.getElementById('backToTop');
     var bSys=true;
@@ -25,10 +25,8 @@ window.onload=function()
             }
             bSys=true;
         },10);
-
     };
-
-};
+})();
 
 
 

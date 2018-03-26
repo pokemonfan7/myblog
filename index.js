@@ -35,21 +35,38 @@
     };
     aJax.send();
 })();
+//书籍滚动
+(function(){
+    var oUl=document.getElementsByClassName('figure-list')[0];
+    var timer=null,isSpeed=1;
+    oUl.innerHTML+=oUl.innerHTML;
+    function toMove() {
+        // console.log(oUl.offsetHeight);
+        oUl.style.top=oUl.offsetTop-isSpeed+'px';
+        if(oUl.offsetTop<-(oUl.offsetHeight+35))
+        {
+            oUl.style.top='0px';
+        }
+    }
+    timer=setInterval(toMove,20);
+    oUl.addEventListener("mouseover",function(){clearInterval(timer)});
+    oUl.addEventListener("mouseout",function(){timer=setInterval(toMove,20)});
+})();
 //点击回到顶部
-window.onload=function(){
+(function(){
     var aBtn=document.getElementById('backToTop');
     var bSys=true;
     var Timer=null;
     //检测用户滚动
-    window.onscroll=function()
+    window.addEventListener("scroll",function()
     {
         if(!bSys)
         {
             clearInterval(Timer);
         }
         bSys=false;
-    };
-    aBtn.onclick=function()
+    });
+    aBtn.addEventListener("click",function()
     {
         Timer=setInterval(function(){
             var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
@@ -62,29 +79,10 @@ window.onload=function(){
             }
             bSys=true;
         },10);
-
-    };
-
-    //书籍滚动
-    var oUl=document.getElementsByClassName('figure-list')[0];
-    var timer=null;
-    var isSpeed=0;
-    oUl.innerHTML+=oUl.innerHTML;
-
-    function toMove() {
-        // console.log(oUl.offsetHeight);
-        oUl.style.top=oUl.offsetTop-isSpeed+'px';
-        if(oUl.offsetTop<-(oUl.offsetHeight+35))
-        {
-            oUl.style.top='0px';
-        }
-    }
-    isSpeed=1;
-    timer=setInterval(toMove,20);
-    oUl.addEventListener("mouseover",function(){clearInterval(timer)});
-    oUl.addEventListener("mouseout",function(){timer=setInterval(toMove,20)});
-
+    });
+})();
 //登录注册
+(function(){
     var login=document.getElementById("login");
     var register=document.getElementById("register");
     var dialogLogin=document.getElementById("dialog-login");
@@ -178,7 +176,18 @@ window.onload=function(){
             oUl.appendChild(oLi);
         }
     })();
-
+})();
+//dialog居中
+(function(){
+    var login=document.getElementById("login");
+    var register=document.getElementById("register");
+    var loginForm=document.getElementById("login-form");
+    var registerForm=document.getElementById("register-form");
+    var back=document.getElementById("back");
+    var loginFormWidth=parseInt(window.getComputedStyle(loginForm).width);
+    var loginFormHeight=parseInt(window.getComputedStyle(loginForm).height);
+    var registerFormWidth=parseInt(window.getComputedStyle(registerForm).width);
+    var registerFormHeight=parseInt(window.getComputedStyle(registerForm).height);
     //dialog一直居中
     function center(obj){
         var screenHeight=document.documentElement.clientHeight;
@@ -196,10 +205,6 @@ window.onload=function(){
     backCenter(back);
     center(loginForm);
     center(registerForm);
-    var loginFormWidth=parseInt(window.getComputedStyle(loginForm).width);
-    var loginFormHeight=parseInt(window.getComputedStyle(loginForm).height);
-    var registerFormWidth=parseInt(window.getComputedStyle(registerForm).width);
-    var registerFormHeight=parseInt(window.getComputedStyle(registerForm).height);
     window.addEventListener("scroll",function(){
         var screenHeight=document.documentElement.clientHeight;
         var screenWidth=document.documentElement.clientWidth;
@@ -228,5 +233,5 @@ window.onload=function(){
         registerForm.style.left=registerFormLeft+"px";
         registerForm.style.top=registerFormTop+"px";
     });
-};
+})();
 

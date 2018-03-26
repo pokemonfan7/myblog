@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fe7bd35f-a509-48f7-9d3c-4b1b19c6c99d" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.css" afterPath="$PROJECT_DIR$/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/demos/demos/无缝滚动/pokemon.html" afterPath="$PROJECT_DIR$/nav-list/demos/demos/无缝滚动/pokemon.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/index.js" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/CSS/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/notes/note-data/JS/index.js" afterPath="$PROJECT_DIR$/nav-list/notes/note-data/JS/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,48 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2096">
-              <caret line="156" column="39" lean-forward="true" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pokemon.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nav-list/demos/demos/无缝滚动/pokemon.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1792">
-              <caret line="76" column="41" lean-forward="true" selection-start-line="75" selection-start-column="10" selection-end-line="76" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="84" column="47" lean-forward="true" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -80,7 +38,6 @@
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/demos.css" />
         <option value="$PROJECT_DIR$/nav-list/notes/notes-HTML.html" />
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/promise&amp;async - 副本.html" />
-        <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/index.js" />
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/es6.html" />
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/center.html" />
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/css-attribute.html" />
@@ -110,6 +67,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.css" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/nav-list/notes/note-data/JS/index.js" />
+        <option value="$PROJECT_DIR$/nav-list/notes/note-data/CSS/index.js" />
       </list>
     </option>
   </component>
@@ -197,11 +156,12 @@
       <workItem from="1522037036282" duration="461000" />
       <workItem from="1522039073409" duration="370000" />
       <workItem from="1522041422089" duration="2059000" />
+      <workItem from="1522046400401" duration="1037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30882000" />
+    <option name="totallyTimeSpent" value="31919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -238,13 +198,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/notes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nav-list/notes/notes-JS.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1204">
@@ -284,13 +237,6 @@
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/demos.css" />
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/demos.html" />
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/promise&amp;async - 副本.html" />
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/es6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -453,34 +399,60 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/格式.html" />
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2096">
-          <caret line="156" column="39" lean-forward="true" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="140">
+          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <folding>
+            <element signature="e#23#1536#0" expanded="false" />
+            <element signature="e#1559#2098#0" expanded="false" />
+            <element signature="e#2123#2848#0" expanded="false" />
+            <element signature="e#2871#6282#0" expanded="false" />
+            <element signature="e#6309#9079#0" expanded="false" />
+            <element signature="e#6936#7374#0" expanded="false" />
+            <element signature="e#7403#7506#0" expanded="false" />
+            <element signature="e#7625#8325#0" expanded="false" />
+            <element signature="e#8375#9075#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nav-list/demos/demos/无缝滚动/pokemon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1792">
-          <caret line="76" column="41" lean-forward="true" selection-start-line="75" selection-start-column="10" selection-end-line="76" selection-end-column="41" />
+        <state relative-caret-position="28">
+          <caret line="76" column="41" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="76" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="28">
           <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="84" column="47" lean-forward="true" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="47" />
+        <state relative-caret-position="0">
+          <caret line="156" column="39" lean-forward="false" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/CSS/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
           <folding />
         </state>
       </provider>
