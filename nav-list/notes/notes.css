@@ -122,11 +122,14 @@ main{
   margin: 0 auto;
   background: #fff;
 }
-#node-body-container li{
+.node-body-container{
+  display:none;
+}
+.node-body-container li{
   height: 60px;
   padding-top: 10px;
 }
-#node-body-container li>a{
+.node-body-container li>a{
   display: inline-block;
   margin: 5px 0;
   padding-left: 8px;
@@ -135,7 +138,7 @@ main{
   color: #2e3135;
   text-decoration: none;
 }
-#node-body-container li p{
+.node-body-container li p{
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
   font-size: 12px;
@@ -143,14 +146,14 @@ main{
   box-sizing: border-box;
   padding-left: 8px;
 }
-#node-body-container li p>a{
+.node-body-container li p>a{
   color: #777;
   text-decoration: none;
 }
-#node-body-container li p>a:hover{
+.node-body-container li p>a:hover{
   color: #62c292;
 }
-#node-body-container li p span:after{
+.node-body-container li p span:after{
   content: "\B7";
   margin: 0 4px;
 }
