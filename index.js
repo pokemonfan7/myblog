@@ -1,41 +1,42 @@
 //ajax加载列表
-var oUl=document.getElementById("list-body-container");
-var aJax = new XMLHttpRequest();
-aJax.open("GET","https://5ab1cc2362a6ae001408c195.mockapi.io/blog-list",true);
-aJax.onreadystatechange=function(){
-    if(aJax.readyState===4&&aJax.status===200){
-        console.log(aJax.responseText);
-        var blogList=JSON.parse(aJax.responseText);
-        console.log(blogList);
-        blogList.reverse().forEach(function(v){
-            var oLi=document.createElement("li");
-            var oA=document.createElement("a");
-            var oP=document.createElement("p");
-            var spanAuthor=document.createElement("span");
-            var spanDate=document.createElement("span");
-            var spanDesc=document.createElement("span");
-            var aClass=document.createElement("a");
-            spanAuthor.innerHTML=v.author;
-            spanDate.innerHTML=v.date;
-            spanDesc.innerHTML=v.desc;
-            aClass.innerHTML=v.class;
-            oP.appendChild(spanAuthor);
-            oP.appendChild(spanDate);
-            oP.appendChild(spanDesc);
-            oP.appendChild(aClass);
-            oA.innerHTML=v.title;
-            oA.href=v.url;
-            oA.target="_blank";
-            oLi.appendChild(oA);
-            oLi.appendChild(oP);
-            oUl.append(oLi);
-        })
-    }
-};
-aJax.send();
+(function() {
+    var oUl = document.getElementById("list-body-container");
+    var aJax = new XMLHttpRequest();
+    aJax.open("GET", "https://5ab1cc2362a6ae001408c195.mockapi.io/blog-list", true);
+    aJax.onreadystatechange = function () {
+        if (aJax.readyState === 4 && aJax.status === 200) {
+            console.log(aJax.responseText);
+            var blogList = JSON.parse(aJax.responseText);
+            console.log(blogList);
+            blogList.reverse().forEach(function (v) {
+                var oLi = document.createElement("li");
+                var oA = document.createElement("a");
+                var oP = document.createElement("p");
+                var spanAuthor = document.createElement("span");
+                var spanDate = document.createElement("span");
+                var spanDesc = document.createElement("span");
+                var aClass = document.createElement("a");
+                spanAuthor.innerHTML = v.author;
+                spanDate.innerHTML = v.date;
+                spanDesc.innerHTML = v.desc;
+                aClass.innerHTML = v.class;
+                oP.appendChild(spanAuthor);
+                oP.appendChild(spanDate);
+                oP.appendChild(spanDesc);
+                oP.appendChild(aClass);
+                oA.innerHTML = v.title;
+                oA.href = v.url;
+                oA.target = "_blank";
+                oLi.appendChild(oA);
+                oLi.appendChild(oP);
+                oUl.append(oLi);
+            })
+        }
+    };
+    aJax.send();
+})();
 //点击回到顶部
-window.onload=function()
-{
+window.onload=function(){
     var aBtn=document.getElementById('backToTop');
     var bSys=true;
     var Timer=null;
@@ -64,6 +65,24 @@ window.onload=function()
 
     };
 
+    //书籍滚动
+    var oUl=document.getElementsByClassName('figure-list')[0];
+    var timer=null;
+    var isSpeed=0;
+    oUl.innerHTML+=oUl.innerHTML;
+
+    function toMove() {
+        // console.log(oUl.offsetHeight);
+        oUl.style.top=oUl.offsetTop-isSpeed+'px';
+        if(oUl.offsetTop<-(oUl.offsetHeight+35))
+        {
+            oUl.style.top='0px';
+        }
+    }
+    isSpeed=1;
+    timer=setInterval(toMove,20);
+    oUl.addEventListener("mouseover",function(){clearInterval(timer)});
+    oUl.addEventListener("mouseout",function(){timer=setInterval(toMove,20)});
 
 //登录注册
     var login=document.getElementById("login");
@@ -119,7 +138,7 @@ window.onload=function()
         oUl.appendChild(oLi);
         //cookie
         var exp = new Date();
-        exp.setTime(exp.getTime() + 60 * 1000 * 60 * 24); //24小时
+        exp.setTime(exp.getTime() + 60 * 1000 * 60); //1小时
         document.cookie="login="+true+";expires="+exp.toGMTString();
         document.cookie="user="+"Alexz"+";expires="+exp.toGMTString();
     }
@@ -133,7 +152,8 @@ window.onload=function()
     function getCookie(name){
         var strCookie = document.cookie;
         var arrCookie = strCookie.split(";");
-        for(var i=0;i<arrCookie.length;i++){
+        var len=arrCookie.length;
+        for(var i=0;i<len;i++){
             var arr=arrCookie[i].split("=");
             if(arr[0]===name){
                 return arr[1];

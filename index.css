@@ -190,6 +190,16 @@ main{
   content: "\B7";
   margin: 0 4px;
 }
+
+.aside-body{
+  position: relative;
+  height: 680px;
+  overflow: hidden;
+}
+.figure-list{
+  position: absolute;
+  height: 1020px;
+}
 .aside-body figure{
   height:170px;
   position: relative;
