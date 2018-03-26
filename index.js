@@ -98,7 +98,7 @@
     dialogRegister.addEventListener("click",toggleDialog);
     loginBtn.addEventListener("click",logIn);
     registerBtn.addEventListener("click",logIn);
-    back.addEventListener("click",outDialog);
+    back.addEventListener("click",closeDialog);
     function loginDialog(e){
         e.preventDefault();
         back.style.display="block";
@@ -140,7 +140,7 @@
         document.cookie="login="+true+";expires="+exp.toGMTString()+';path=/;domain=pokemonfan7.github.io';
         document.cookie="user="+"Alexz"+";expires="+exp.toGMTString()+';path=/;domain=pokemonfan7.github.io';
     }
-    function outDialog(){
+    function closeDialog(){
         back.style.display="none";
         loginForm.style.display="none";
         registerForm.style.display="none";
