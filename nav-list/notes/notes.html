@@ -21,8 +21,8 @@
 			<li class="fl"><a class="new" href="../demos/demos.html">我的demo</a></li>
 		</ul>
 		<ul class="nav-right fr">
-			<li class="fl"><a class="login" href="">登录</a></li>
-			<li class="fl"><a class="register" href="">注册</a></li>
+			<li class="fl"><a id="login" class="login" href="">登录</a></li>
+			<li class="fl"><a id="register" class="register" href="">注册</a></li>
 		</ul>
 	</div>
 </nav>
@@ -173,6 +173,25 @@
 		</div>
 	</div>
 </main>
+<div id="back"></div>
+<form id="login-form" action="">
+	<div class="dialog">
+		<div><input required type="text" autofocus maxlength="5" placeholder="用户名"></div>
+		<div><input required type="password" placeholder="密码"></div>
+		<div><input required id="login-btn" type="submit" value="登录"></div>
+		<div class="sec4"><span class="fl">没有帐号？</span><a id="dialog-login" class="fl" href="">注册</a><a class="fr" href="">忘记密码</a></div>
+	</div>
+</form>
+<form id="register-form" action="">
+	<div class="dialog">
+		<div><input required type="text" autofocus maxlength="5" placeholder="用户名"></div>
+		<div><input required type="password" placeholder="密码"></div>
+		<div><input required type="password" placeholder="确认密码"></div>
+		<div><input required id="register-btn" type="submit" value="注册"></div>
+		<div class="sec4"><span class="fl">有帐号？</span><a id="dialog-register" class="fl" href="">登录</a><a class="fr" href="">忘记密码</a></div>
+	</div>
+</form>
+<script src="../main.js"></script>
 <script src="notes.js"></script>
 </body>
 </html>
