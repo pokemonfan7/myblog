@@ -54,8 +54,8 @@
         //cookie
         var exp = new Date();
         exp.setTime(exp.getTime() + 60 * 1000 * 60); //1小时
-        document.cookie="login="+true+";expires="+exp.toGMTString();
-        document.cookie="user="+"Alexz"+";expires="+exp.toGMTString();
+        document.cookie="login="+true+";expires="+exp.toGMTString()+';path=/;domain=pokemonfan7.github.io';
+        document.cookie="user="+"Alexz"+";expires="+exp.toGMTString()+';path=/;domain=pokemonfan7.github.io';
     }
     function outDialog(){
         back.style.display="none";
