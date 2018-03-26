@@ -51,7 +51,7 @@ nav{
   display: block;
   width: 60px;
   height: 60px;
-  background: url(../../img/1.jpg) 0 0 no-repeat;
+  background: url(../../img/1.jpg) 0 0 /cover no-repeat;
 }
 .nav-left li{
   margin: 0 20px;
@@ -162,11 +162,39 @@ main{
 
 
 @media only screen and (max-width:680px){
+  .logo{
+    margin-top:8px;
+    width:40px;
+    height:40px;
+  }
+  #typing{
+    display: none;
+  }
   .nav-left li{
     margin: 0 10px;
   }
+  .work-list{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+  }
+  .work-aside{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+  }
 }
 @media only screen and (max-width:400px){
+  .logo{
+    margin-top:16px;
+    width:22px;
+    height:22px;
+  }
+  #typing{
+    display: none;
+  }
   .nav-left li{
     margin: 0 4px;
   }

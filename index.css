@@ -234,6 +234,14 @@ main{
   }
 }
 @media only screen and (max-width:680px){
+  .logo{
+	margin-top:8px;
+	width:40px;
+	height:40px;
+  }
+  #typing{
+	display: none;
+  }
   .nav-left li{
     margin: 0 10px;
   }
@@ -251,6 +259,14 @@ main{
   }
 }
 @media only screen and (max-width:400px){
+  .logo{
+	margin-top:16px;
+	width:22px;
+	height:22px;
+  }
+  #typing{
+	display: none;
+  }
   .nav-left li{
     margin: 0 4px;
   }
