@@ -573,11 +573,11 @@ main{
   height:100%;
 }
 #z{
-  background:url(c0448018ly1fj8jwq1h88j20u01hc7dy.jpg) center center /cover no-repeat;
+  background:url(./img/sun.jpg) center center /cover no-repeat;
   transform:translateZ(1px);
 }
 #f{
-  background:url(c0448018ly1fj8jwqex9ej20u01hc7b3.jpg) center center /cover no-repeat;
+  background:url(./img/moon.jpg) center center /cover no-repeat;
   transform:translateZ(-1px) rotateY(180deg);
 }
 #sec8 .box:hover .pai{
