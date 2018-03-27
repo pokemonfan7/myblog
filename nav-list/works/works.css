@@ -126,6 +126,34 @@ nav{
   outline: none;
   background: url(./img/search-button.png) 0 0 /cover no-repeat;
 }
+#suggest{
+  display: none;
+  position:absolute;
+  top:45px;
+  left:338px;
+  width:388px;
+  border-width:1px;
+  border-style:solid;
+  border-color: #999;
+  padding: 0;
+  margin: 0;
+  background-color:#fff;
+}
+#suggest_result{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#suggest_result li{
+  padding:3px;
+  line-height:25px;
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+}
+#suggest_result li:hover{
+  background-color:#e5e5e5;;
+}
 /*main*/
 main{
   max-width: 980px;
