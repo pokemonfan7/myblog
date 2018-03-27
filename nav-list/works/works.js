@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+$(document).ready(function() {
    $('#search_input').on('keyup',function(){
   		var searchText=$(this).val();
 		var getdata=function (data){
@@ -13,7 +13,7 @@ jQuery(document).ready(function() {
 			};
     $.ajax({
     	type:"GET",
-    	url:"http://api.bing.com/qsonhs.aspx?type=cb&cb=getdata&q=" +searchText,
+    	url:"https://api.bing.com/qsonhs.aspx?type=cb&cb=getdata&q=" +searchText,
     	dataType: "jsonp",
     	async:false,
     	jsonp: "getdata",
