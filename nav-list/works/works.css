@@ -85,12 +85,52 @@ nav{
   color: #62c292;
   border: 1px solid #62c292;
 }
-
+/*search*/
+#search-container{
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 70px;
+  background: #aaa;
+}
+#search_box{
+  width:550px;
+  margin: 0 auto;
+}
+#logo{
+  float: left;
+  width: 107px;
+  height:53px;
+  margin: -4px 18px 0 0;
+  background-image: url(./img/logo.png);
+}
+#search_form{
+  float: left;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #fff;
+}
+#search_input{
+  float: left;
+  width: 350px;
+  height:25px;
+  font-size: 16px;
+  line-height: 25px;
+  border: 0;
+  outline: none;
+}
+#search_submit{
+  width:25px;
+  height:25px;
+  border: 0;
+  outline: none;
+  background: url(./img/search-button.png) 0 0 /cover no-repeat;
+}
 /*main*/
 main{
   max-width: 980px;
   margin:0 auto;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 .main-container{
   background: #fff;

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe7bd35f-a509-48f7-9d3c-4b1b19c6c99d" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/works/works.css" afterPath="$PROJECT_DIR$/nav-list/works/works.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/works/works.html" afterPath="$PROJECT_DIR$/nav-list/works/works.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -68,7 +69,10 @@
         <option value="$PROJECT_DIR$/nav-list/notes/note-data/CSS/style.css" />
         <option value="$PROJECT_DIR$/nav-list/notes/notes.css" />
         <option value="$PROJECT_DIR$/nav-list/demos/demos.css" />
+        <option value="$USER_HOME$/Desktop/BingSearchDemo/bing.html" />
         <option value="$PROJECT_DIR$/nav-list/works/works.css" />
+        <option value="$PROJECT_DIR$/nav-list/works/works.js" />
+        <option value="$PROJECT_DIR$/nav-list/works/search.js" />
         <option value="$PROJECT_DIR$/nav-list/works/works.html" />
       </list>
     </option>
@@ -161,11 +165,12 @@
       <workItem from="1522051743201" duration="4523000" />
       <workItem from="1522059463092" duration="218000" />
       <workItem from="1522111887857" duration="656000" />
+      <workItem from="1522128652369" duration="5133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37316000" />
+    <option name="totallyTimeSpent" value="42449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -202,17 +207,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/demos.html" />
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/promise&amp;async - 副本.html" />
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/es6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="245" column="34" lean-forward="false" selection-start-line="245" selection-start-column="34" selection-end-line="245" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/center.html" />
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/css-attribute.html" />
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/sanlan.html" />
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/react-optimize.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -346,7 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
           <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -354,7 +347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="61" column="44" lean-forward="false" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -362,7 +354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="236" column="8" lean-forward="true" selection-start-line="236" selection-start-column="8" selection-end-line="236" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -370,7 +361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="53" column="45" lean-forward="false" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -378,22 +368,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="70" column="45" lean-forward="false" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/BingSearchDemo/css/bing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nav-list/works/works.html">
+    <entry file="file://$USER_HOME$/Desktop/BingSearchDemo/bing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+        <state relative-caret-position="406">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nav-list/works/works.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="53" column="45" lean-forward="false" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+        <state relative-caret-position="238">
+          <caret line="129" column="16" lean-forward="true" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/BingSearchDemo/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="65" column="68" lean-forward="true" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav-list/works/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1554">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav-list/works/works.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nav-list/works/works.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="126" column="7" lean-forward="true" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
           <folding />
         </state>
       </provider>
