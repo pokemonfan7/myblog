@@ -68,14 +68,14 @@
 
     function create(){
         var start = nowPage * length;
-      
+
         if(start >= data.length){
            scroll.style.paddingBottom = "1.45rem";
           min = wrap.clientHeight - scroll.offsetHeight;
           startMove({
                 el: scroll,
                 target: {
-                    translateY: min 
+                    translateY: min
                 },
                 time: 300,
                 type: 'easeOut',
@@ -90,14 +90,14 @@
 		            });
                 }
             });
-            
+
             isLoadOver = true;
             loading.style.display = 'block';
             scrollMax = css(scroll,'translateY');
 //			console.log(scroll.offsetHeight,css(scroll,'translateY'))
             return;
         }
-		
+
         var end = start + length;
         end = end > data.length ? data.length : end;
 
