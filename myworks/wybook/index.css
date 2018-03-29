@@ -1,0 +1,313 @@
+body, p, h1, h3, h4 {margin: 0;}
+ul, ol {list-style: none; margin: 0; padding: 0;}
+a{text-decoration: none;cursor: pointer;}
+/*a:link{color: #3b352d;}*/
+/*a:visited{color: #3b352d;}*/
+/*a:hover{color: #3b352d;}*/
+body{
+  font-fmily: 微软雅黑, "Open Sans", sans-serif;
+  background: #f4f5f5;
+}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#active {
+  border-radius: .125rem;
+  color: #fff;
+  background: #ed6460;
+}
+
+
+/*header*/
+header {
+  height: 1.6rem;
+  background: #ed6460;
+}
+.logo {
+  float :left;
+  width: 4.125rem;
+  height: .675rem;
+  font-size :0;
+  margin: .45rem 0 .375rem .525rem;
+  background: url(./img/logo.png) 0 0 /contain no-repeat;
+}
+.download {
+  float: left;
+  display: block;
+  width: 2.05rem;
+  height: .85rem;
+  margin: .3rem .375rem;
+  border: .05rem solid #fff;
+  border-radius: .15rem;
+  font-size: .5rem;
+  line-height: .85rem;
+  color: #fff;
+  text-align: center;
+}
+.head-r {
+  float: right;
+  width: 3.5rem;
+}
+.search {
+  width: 1.15rem;
+  height: 1.5rem;
+  padding-left: .75rem;
+  padding-right: .375rem;
+  border-right: .05rem solid #fff;
+  font-size: .55rem;
+  color: #fff;
+  line-height: 1.5rem;
+  background: url("./img/search.png") 0 .05rem no-repeat;
+  background-size: 30%;
+}
+.user {
+  display: block;
+  float: right;
+  width: 1.125rem;
+  height: 1.5rem;
+  background: url(./img/user.png) .25rem .1rem /contain no-repeat;
+}
+
+/*nav*/
+nav {
+  padding: .15rem 0;
+  margin-bottom: .3rem;
+  background: #fff;
+}
+.nav-list li{
+  float: left;
+  width: 25%;
+  height: 1.2rem;
+  font-size: .6rem;
+  text-align: center;
+}
+.nav-list li a{
+  display: block;
+  width: 2.75rem;
+  height: 1.05rem;
+  margin: .15rem auto;
+  line-height: .9rem;
+  text-align: center;
+  color: #3b352d;
+}
+.recharge {
+  background: url("./img/money.png") 0 -.1rem /contain no-repeat;
+}
+/*main*/
+
+.last-book {
+  height: 2.075rem;
+  font-size: .55rem;
+  line-height: 2.075rem;
+  background: #fff;
+  color: #aba59a;
+}
+.last-book span {
+  margin-left: .575rem;
+}
+.last-book a {
+  float: right;
+  padding-left: .75rem;
+  margin-right: .575rem;
+  color: #aba59a;
+  background: url("./img/booktable.png") 0 0 /contain no-repeat;
+}
+.list-box {
+  padding: .575rem;
+  margin-bottom: .45rem;
+  background: #fff;
+}
+.list-box h3 {
+  padding-bottom: .75rem;
+}
+.list-box .title {
+  float: left;
+  line-height: 0;
+}
+.list-box .sep {
+  display: inline-block;
+  width: .15rem;
+  height: .5rem;
+  border-radius: .125rem;
+  margin-right: .225rem;
+  background: #ed6460;
+}
+.list-box .gradient {
+  height: .725rem;
+  padding-bottom: .75rem;
+  font-size: .675rem;
+  line-height: .725rem;
+  color: #ed6460;
+}
+.list-box .more {
+  float: right;
+  height: .725rem;
+  font-size: .55rem;
+  color: #aba59a;
+}
+.list-box .arrow {
+  display: inline-block;
+  width: .225rem;
+  height: .255rem;
+  border: .05rem solid #aba59a;
+  border-left: .05rem solid transparent;
+  border-bottom: .05rem solid transparent;
+  transform: rotate(45deg);
+}
+.book-list {
+  width: 100%;
+}
+.book-list li {
+  float: left;
+  width: 30%;
+  margin-bottom: .75rem;
+}
+.book-list li:nth-child(3n-1) {
+  margin: 0 5% .75rem;
+}
+.pic {
+  display: block;
+  height: 0;
+  padding-bottom: 140%;
+  box-shadow: 0 0.375rem 0.75rem 0 rgba(0,0,0,.08), 0 0.15rem 0.15rem 0 rgba(0,0,0,.08);
+}
+.pic img{
+  width: 100%;
+}
+.desc h4 {
+  height: 1.35rem;
+  max-height: 1.35rem;
+  margin: .375rem 0 .2rem;
+  font-size: .55rem;
+  line-height: .675rem;
+  font-weight: 400;
+  color: #6c6358;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.desc span {
+  display: block;
+  height: .5rem;
+  font-size: .45rem;
+  line-height: .5rem;
+  color: #aba59a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.book-banner {
+  float: left;
+  display: block;
+  width: 7rem;
+  margin-right: .6rem;
+}
+.book-banner:last-child {
+  margin-right: 0;
+}
+.book-banner img {
+  width:100%;
+}
+.book-container {
+  width: 100%;
+}
+.book-topic {
+  display: block;
+  margin-bottom: .5rem;
+}
+.book-topic img {
+  width: 100%;
+  border-radius: .15rem;
+  margin-bottom: .2rem;
+}
+.book-topic h3 {
+  padding-bottom: 0;
+  font-size: .6rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #6c6358;
+}
+.book-topic p {
+  font-size: .5rem;
+  line-height: .75rem;
+  color: #807a73;
+  margin-top: .15rem;
+}
+.book-detail {
+  display: block;
+  border-top: .05rem solid #ededed;
+  height:1.7rem;
+  font-size: .6rem;
+  line-height: 1.925rem;
+  color: #807a73;
+  text-align: center;
+}
+.bottom-wrap {
+  background: #fff;
+  padding-bottom: .95rem;
+}
+.bottom-search {
+  padding: .575rem .575rem 0;
+}
+.bottom-search form {
+  padding-bottom: .575rem;
+  border-bottom: .05rem solid #ededed;
+}
+#search-input, #search-btn {
+  float: left;
+  height: 1.05rem;
+  border: 0;
+  outline: none;
+}
+#search-input {
+  box-sizing: border-box;
+  width: 13rem;
+  padding-left: 1rem;
+  border-radius: .525rem 0 0 .525rem;
+  background: #f2f2f2;
+}
+#search-btn {
+  width: 1.85rem;
+  border-radius: 0 .525rem .525rem 0;
+  background: #d8d8d8 url("./img/search.png") .5rem .25rem /contain no-repeat;
+  background-size: 30%;
+}
+.bottom-download {
+  display: block;
+  box-sizing: border-box;
+  height: 1.425rem;
+  margin: .575rem;
+  border: .05rem solid #ed6460;
+  border-radius: .2rem;
+  font-size: .6rem;
+  line-height: 1.425rem;
+  color: #ed6460;
+  text-align: center;
+  background: #fff;
+}
+footer {
+  padding: .575rem;
+}
+.footer-nav {
+  height: 1.05rem;
+  font-size: 0;
+  line-height: 1.05rem;
+  text-align: center;
+  background: #f5f5f5;
+}
+.footer-nav a {
+  margin: 0 0 0 .825rem;
+  font-size: .45rem;
+  color: #aba59a;
+}
+footer p {
+  margin: .6rem;
+  font-size: .55rem;
+  text-align: center;
+  color: #aba59a;
+}
