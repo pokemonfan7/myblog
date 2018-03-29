@@ -1,59 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe7bd35f-a509-48f7-9d3c-4b1b19c6c99d" name="默认的" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/Picture.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/bottom-a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/bottom-b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/cz.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/day.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/foot-rig.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/foot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/h2-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-ma.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-mb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-mc.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-md.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-me.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-mf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-mg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-mh.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-ta.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/hot-tb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/ico.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/jhs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/liat-a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/liat-c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/liat-d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/ljb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/lm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/morn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/purchase-bo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/purchase-left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/purchase-rig.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/purchase-top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/qa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/seek.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/shop-a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/shop-b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/shop-d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/shop-e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/shop-f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/sprite-foot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/super-b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/super-l.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/super-t.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/tdd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/tm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/img/tsh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myworks/taobao/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nav-list/works/img/taobao.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nav-list/works/works.html" afterPath="$PROJECT_DIR$/nav-list/works/works.html" />
-    </list>
+    <list default="true" id="fe7bd35f-a509-48f7-9d3c-4b1b19c6c99d" name="默认的" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -225,7 +173,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="333" />
     <option name="y" value="39" />
     <option name="width" value="1400" />
@@ -309,16 +257,15 @@
       <workItem from="1522140079863" duration="2268000" />
       <workItem from="1522199301894" duration="3531000" />
       <workItem from="1522307961404" duration="12393000" />
-      <workItem from="1522320502326" duration="698000" />
+      <workItem from="1522320502326" duration="788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61339000" />
+    <option name="totallyTimeSpent" value="61429000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1734375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
