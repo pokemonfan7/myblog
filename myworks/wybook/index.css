@@ -269,6 +269,7 @@ nav {
   width: 13rem;
   padding-left: 1rem;
   border-radius: .525rem 0 0 .525rem;
+  font-size: .4rem;
   background: #f2f2f2;
 }
 #search-btn {
