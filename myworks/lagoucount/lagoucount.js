@@ -152,7 +152,7 @@
                             ],
                             series : [
                                 {
-                                    name:'蒸发量',
+                                    name:'数量',
                                     type:'bar',
                                     data:[
                                         cityList[0].cityCount, cityList[1].cityCount, cityList[2].cityCount, cityList[3].cityCount,
