@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe7bd35f-a509-48f7-9d3c-4b1b19c6c99d" name="默认的" comment="" />
+    <list default="true" id="fe7bd35f-a509-48f7-9d3c-4b1b19c6c99d" name="默认的" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,56 +16,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myworks/wybook/index.js">
+      <file leaf-file-name="lagoucount.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myworks/lagoucount/lagoucount.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myworks/wybook/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1988">
-              <caret line="155" column="24" lean-forward="false" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
+            <state relative-caret-position="448">
+              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
-                <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myworks/wybook/index.css">
+      <file leaf-file-name="lagoucount.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myworks/lagoucount/lagoucount.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="207" column="18" lean-forward="false" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+            <state relative-caret-position="84">
+              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="works.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nav-list/works/works.html">
+      <file leaf-file-name="lagoucount.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myworks/lagoucount/lagoucount.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="76" column="11" lean-forward="true" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="2254">
+              <caret line="160" column="134" lean-forward="true" selection-start-line="160" selection-start-column="134" selection-end-line="160" selection-end-column="134" />
+              <folding>
+                <element signature="e#29#3170#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="ajax.js" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+            <state relative-caret-position="28">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -157,6 +148,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/myworks/wybook/index.css" />
         <option value="$PROJECT_DIR$/nav-list/works/works.html" />
+        <option value="$PROJECT_DIR$/myworks/lagoucount/lagoucount.css" />
+        <option value="$PROJECT_DIR$/myworks/lagoucount/lagoucount.html" />
+        <option value="$PROJECT_DIR$/myworks/lagoucount/lagoucount.js" />
       </list>
     </option>
   </component>
@@ -205,6 +199,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -258,11 +253,12 @@
       <workItem from="1522199301894" duration="3531000" />
       <workItem from="1522307961404" duration="12393000" />
       <workItem from="1522320502326" duration="788000" />
+      <workItem from="1523060542365" duration="3427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61429000" />
+    <option name="totallyTimeSpent" value="64856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -299,9 +295,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nav-list/demos/demos/翻面图片/正反翻转.html" />
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/notes-JS.css" />
-    <entry file="file://$PROJECT_DIR$/nav-list/notes/notes-HTML.css" />
     <entry file="file://$PROJECT_DIR$/nav-list/notes/notes-CSS.css" />
     <entry file="file://$USER_HOME$/Desktop/异步操作.js" />
     <entry file="file://$PROJECT_DIR$/nav-list/notes/note-data/JS/新建文件夹/格式.html">
@@ -414,13 +407,6 @@
     <entry file="file://$USER_HOME$/Desktop/BingSearchDemo/bing.html" />
     <entry file="file://$USER_HOME$/Desktop/BingSearchDemo/js/search.js" />
     <entry file="file://$PROJECT_DIR$/nav-list/works/search.js" />
-    <entry file="file://$USER_HOME$/Desktop/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/BingSearchDemo-master/BingSearchDemo-master/BingSearchDemo/bing.html" />
     <entry file="file://$USER_HOME$/Desktop/BingSearchDemo-master/BingSearchDemo-master/BingSearchDemo/js/search.js" />
     <entry file="file://$USER_HOME$/Desktop/BingSearchDemo-master/BingSearchDemo-master/BingSearchDemo/css/bing.css" />
@@ -512,19 +498,55 @@
     <entry file="file://$PROJECT_DIR$/myworks/wybook/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1988">
-          <caret line="155" column="24" lean-forward="false" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
+          <caret line="166" column="24" lean-forward="false" selection-start-line="166" selection-start-column="24" selection-end-line="166" selection-end-column="24" />
           <folding>
-            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1522655828837" expanded="true" signature="928:1097" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1112:6944" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1138:1312" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1228:1302" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1318:1625" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1350:1618" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1632:6765" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1687:1742" ph="..." />
+            <marker date="1522655828837" expanded="false" signature="1770:3293" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1794:1949" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1983:3281" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="1991:2198" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="2206:2413" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="2421:2628" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="2636:2843" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="2851:3058" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="3066:3273" ph="..." />
+            <marker date="1522655828837" expanded="false" signature="3330:3486" ph="..." />
+            <marker date="1522655828837" expanded="false" signature="3514:5037" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="3538:3693" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="3727:5025" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="3735:3942" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="3950:4157" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="4165:4372" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="4380:4587" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="4595:4802" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="4810:5017" ph="..." />
+            <marker date="1522655828837" expanded="false" signature="5065:5944" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="5089:5245" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="5279:5932" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="5287:5494" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="5502:5709" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="5717:5924" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="5972:6446" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="5996:6151" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="6182:6434" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="6216:6355" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="6473:6757" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="6507:6697" ph="..." />
+            <marker date="1522655828837" expanded="true" signature="6544:6684" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="1932">
           <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
           <folding />
         </state>
@@ -532,17 +554,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myworks/wybook/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="207" column="18" lean-forward="false" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+        <state relative-caret-position="6188">
+          <caret line="221" column="18" lean-forward="false" selection-start-line="221" selection-start-column="18" selection-end-line="221" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nav-list/works/works.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="76" column="11" lean-forward="true" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+        <state relative-caret-position="28">
+          <caret line="76" column="11" lean-forward="false" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+          <folding>
+            <marker date="1522371684137" expanded="true" signature="3179:3207" ph="..." />
+            <marker date="1522371684137" expanded="true" signature="3179:3216" ph="..." />
+            <marker date="1522371684137" expanded="true" signature="3224:3412" ph="..." />
+            <marker date="1522371684137" expanded="true" signature="3248:3403" ph="..." />
+            <marker date="1522371684137" expanded="true" signature="3314:3369" ph="..." />
+            <marker date="1522371684137" expanded="true" signature="3483:3870" ph="..." />
+            <marker date="1522371684137" expanded="true" signature="3505:3862" ph="..." />
+            <marker date="1522371684137" expanded="true" signature="3906:4363" ph="..." />
+            <marker date="1522371684137" expanded="true" signature="3928:4355" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myworks/lagoucount/lagoucount.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myworks/lagoucount/lagoucount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myworks/lagoucount/lagoucount.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2254">
+          <caret line="160" column="134" lean-forward="true" selection-start-line="160" selection-start-column="134" selection-end-line="160" selection-end-column="134" />
+          <folding>
+            <element signature="e#29#3170#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
