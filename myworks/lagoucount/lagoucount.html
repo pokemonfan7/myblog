@@ -15,77 +15,21 @@
     <body>
 	<main>
 		<section id="sec1"></section>
-		<section id="sec2"></section>
-		<section></section>
-		<section></section>
+		<div class="section-container">
+			<section id="sec2"></section>
+			<section id="sec3"></section>
+		</div>
+		<div class="section-container">
+			<section id="sec4"></section>
+			<section id="sec5"></section>
+		</div>
+		<div class="section-container">
+			<section id="sec6"></section>
+			<section id="sec7"></section>
+		</div>
 	</main>
     </body>
-    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
-    <script type="text/javascript" src="./lagoucount.js"></script>
-    <script type="text/javascript">
-//        // 路径配置
-//        require.config({
-//            paths: {
-//                echarts: 'http://echarts.baidu.com/build/dist'
-//            }
-//        });
-//
-//        // 使用
-//        require(
-//            [
-//                'echarts',
-//                'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
-//            ],
-//            function (ec) {
-//                // 基于准备好的dom，初始化echarts图表
-//                var myChart = ec.init(document.getElementById('sec1'));
-//
-//                var option = {
-//                    title : {
-//                        text: '学位统计立标',
-//                        subtext: '数据来自拉勾网'
-//                    },
-//                    tooltip : {
-//                        trigger: 'axis'
-//                    },
-//                    legend: {
-//                        data:['2018年']
-//                    },
-//                    toolbox: {
-//                        show : true,
-//                        feature : {
-//                            mark : {show: true},
-//                            dataView : {show: true, readOnly: false},
-//                            magicType: {show: true, type: ['line', 'bar']},
-//                            restore : {show: true},
-//                            saveAsImage : {show: true}
-//                        }
-//                    },
-//                    calculable : true,
-//                    xAxis : [
-//                        {
-//                            type : 'value',
-//                            boundaryGap : [0, 0.01]
-//                        }
-//                    ],
-//                    yAxis : [
-//                        {
-//                            type : 'category',
-//                            data : ['博士','硕士','本科','大专','不限']
-//                        }
-//                    ],
-//                    series : [
-//                        {
-//                            name:'2018年',
-//                            type:'bar',
-//                            data:[degreeCountList[0].count, degreeCountList[1].count, degreeCountList[2].count, degreeCountList[3].count, degreeCountList[4].count]
-//                        }
-//                    ]
-//                };
-//
-//                // 为echarts对象加载数据
-//                myChart.setOption(option);
-//            }
-//        );
+    <script src="https://cdn.bootcss.com/echarts/4.0.4/echarts.min.js"></script>
+    <script type="text/javascript" src="./lagoucount.js">
     </script>
 </html>
