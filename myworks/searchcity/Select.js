@@ -73,7 +73,7 @@ export default class Select extends Component {
         // var ev = ev || window.event;
         var target = ev.target || ev.srcElement;
         if(target.nodeName.toLowerCase() === 'li'){
-            this.input.value=target.innerHTML;
+            this.input.value=target.innerHTML.replace(/<.+?>/gim,'');
         }
         this.a.className="arrow1";
         this.list.style.display="none";
