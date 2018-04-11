@@ -24,20 +24,22 @@ const city=["北京市","天津市","石家庄市","唐山市","秦皇岛市","�
     "南投县","云林县","嘉义县","台南县","高雄县","屏东县","澎湖县","台东县","花莲县","中西区","东区","九龙城区","观塘区","南区","深水埗区","黄大仙区","湾仔区","油尖旺区","离岛区","葵青区","北区",
     "西贡区","沙田区","屯门区","大埔区","荃湾区","元朗区","澳门特别行政区","海外"];
 
+	//因为是一个组件，所以没有再提取子组件
 export default class Select extends Component {
     constructor(props){
         super(props);
         this.state={
-            search:false,
-            searchList:[],
-            searchWord:"",
-            arrowClass:"arrowTop",
-            listClass:"listHidden"
+            search:false,//是否输入搜索，若没有则显示全部选项，若有则显示搜索选项
+            searchList:[],//搜索选项
+            searchWord:"",//前缀匹配的字
+            arrowClass:"arrowTop",//控制箭头向上、向下
+            listClass:"listHidden"//控制列表显示、隐藏
         };
         this.arrowClick=this.arrowClick.bind(this);
         this.listClick=this.listClick.bind(this);
         this.handleChange=this.handleChange.bind(this);
     }
+	//控制箭头向上、向下
     arrowClick(){
         if(this.state.arrowClass==="arrowTop"){
             this.setState({arrowClass:"arrowBot",listClass:"listShow"})
@@ -45,13 +47,18 @@ export default class Select extends Component {
             this.setState({arrowClass:"arrowTop",listClass:"listHidden"})
         }
     }
+	//控制列表选项，点击后选项输入在搜索框
     listClick(ev){
         let target = ev.target;
         if(target.nodeName.toLowerCase() === 'li'){
             this.input.value=target.innerHTML.replace(/<.+?>/gim,'');
         }
-        this.setState({arrowClass:"arrowTop",listClass:"listHidden"});
+		else if(target.nodeName.toLowerCase() === 'strong'){
+			this.input.value=target.parentNode.innerHTML.replace(/<.+?>/gim,'');
+		}
+		this.setState({arrowClass:"arrowTop",listClass:"listHidden"});
     }
+	//搜索框文字改变后，重新显示搜索选项
     handleChange(){
         let v=this.input.value;
         let searchList=city.filter(x=>x.indexOf(v)===0);
@@ -72,6 +79,7 @@ export default class Select extends Component {
                 </div>
                 <div id="list" className={this.state.listClass}>
                     <ul  onClick={this.listClick}>
+						//三目运算符控制列表显示
                         {this.state.search?
                         this.state.searchList.map(
                             v=>
