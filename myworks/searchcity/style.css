@@ -11,6 +11,12 @@ strong {
   font-weight:normal;
   color:red;
 }
+.searchShow {
+  display:block;
+}
+.searchHidden {
+  display:none;
+}
 .clearfix:after{
   content: "";
   display: block;
@@ -79,7 +85,7 @@ strong {
 
 
 #list {
-  display:none;
+  /*display:none;*/
   width:380px;
   height:300px;
   border:1px solid #000;
