@@ -31,18 +31,18 @@ export default class Select extends Component {
             search:false,
             searchList:[],
             searchWord:"",
-            arrowClass:"arrow1",
-            searchClass:"searchHidden"
+            arrowClass:"arrowTop",
+            listClass:"listHidden"
         };
-        this.click=this.click.bind(this);
+        this.arrowClick=this.arrowClick.bind(this);
         this.listClick=this.listClick.bind(this);
         this.handleChange=this.handleChange.bind(this);
     }
-    click(){
-        if(this.state.arrowClass==="arrow1"){
-            this.setState({arrowClass:"arrow2",searchClass:"searchShow"})
+    arrowClick(){
+        if(this.state.arrowClass==="arrowTop"){
+            this.setState({arrowClass:"arrowBot",listClass:"listShow"})
         }else{
-            this.setState({arrowClass:"arrow1",searchClass:"searchHidden"})
+            this.setState({arrowClass:"arrowTop",listClass:"listHidden"})
         }
     }
     listClick(ev){
@@ -50,7 +50,7 @@ export default class Select extends Component {
         if(target.nodeName.toLowerCase() === 'li'){
             this.input.value=target.innerHTML.replace(/<.+?>/gim,'');
         }
-        this.setState({arrowClass:"arrow1",searchClass:"searchHidden"});
+        this.setState({arrowClass:"arrowTop",listClass:"listHidden"});
     }
     handleChange(){
         let v=this.input.value;
@@ -59,8 +59,8 @@ export default class Select extends Component {
             search:true,
             searchWord:v,
             searchList:searchList,
-            arrowClass:"arrow2",
-            searchClass:"searchShow"
+            arrowClass:"arrowBot",
+            listClass:"listShow"
         })
     }
     render(){
@@ -68,9 +68,9 @@ export default class Select extends Component {
             <React.Fragment>
                 <div id="container" className="clearfix">
                     <input className="input" type="text" placeholder="请输入城市名称" ref={input=>this.input=input} onChange={this.handleChange} />
-                    <a className={this.state.arrowClass} onClick={this.click} ref={a=>this.a=a} />
+                    <a className={this.state.arrowClass} onClick={this.arrowClick} />
                 </div>
-                <div id="list" className={this.state.searchClass}>
+                <div id="list" className={this.state.listClass}>
                     <ul  onClick={this.listClick}>
                         {this.state.search?
                         this.state.searchList.map(

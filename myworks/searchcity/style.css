@@ -11,10 +11,10 @@ strong {
   font-weight:normal;
   color:red;
 }
-.searchShow {
+.listShow {
   display:block;
 }
-.searchHidden {
+.listHidden {
   display:none;
 }
 .clearfix:after{
@@ -39,7 +39,7 @@ strong {
   border: 1px solid #000;
   outline: none;
 }
-.arrow1 {
+.arrowTop {
   float:left;
   display:block;
   width:25px;
@@ -48,7 +48,7 @@ strong {
   outline: none;
   background: #fff;
 }
-.arrow1:after {
+.arrowTop:after {
   position:absolute;
   left: 359px;
   top:8px;
@@ -60,7 +60,7 @@ strong {
   border-bottom: 5px solid #000;
   transition:.3s;
 }
-.arrow2 {
+.arrowBot {
   float:left;
   display:block;
   width:25px;
@@ -69,7 +69,7 @@ strong {
   outline: none;
   background: #fff;
 }
-.arrow2:after {
+.arrowBot:after {
   position:absolute;
   left: 359px;
   top:13px;
