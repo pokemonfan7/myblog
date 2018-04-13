@@ -1,0 +1,94 @@
+*{
+            padding:0;
+            margin:0;
+            list-style:none;
+        }
+        body{
+            background-color:#fafafa;
+        }
+        .m_userinfo{
+            background-color:#fff;
+            padding:1%;
+            border-bottom:1px solid #ccc;
+        }
+        .m_infotop{
+            display:flex;
+            border-bottom:1px solid #9fa1a3;
+            padding-bottom:10px;
+        }
+        .m_img{
+            width: 25%;
+            height: 25%;
+            border-radius: 6px;
+        }
+        .m_img img{
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+        }
+        .m_infor{
+            flex:1;
+            display:flex;
+            margin-left:5%;
+            flex-direction:column;
+			
+        }
+        .m_infor ul{
+            flex:1;
+            display:flex;
+            align-items:center;
+        }
+        .m_infor ul li{
+            flex:1;
+            text-align:center;
+            font-size:15px;
+            color:#a0a0a0;
+            /*align-items: center;*/
+        }
+        .m_infor ul li:nth-child(2){
+            border-left:1px solid #ccc;
+            border-right:1px solid #ccc;
+        }
+        .m_infor ul li a{
+            text-decoration:none;
+            display:block;
+            font-size:15px;
+            color:#1f6299;
+            margin-bottom:10px;
+        }
+        .m_infor a.infoset{
+            display:block;
+            height:30px;
+            border-radius:8px;
+            background-color:#efefef;
+            color:#a0a0a0;
+            font-size:15px;
+            text-decoration:none;
+            text-align:center;
+            line-height:30px;
+        }
+        .info_p{
+            /*height: 59px;*/
+            /*width: 601px;*/
+            padding-top:10px;
+            font-size:15px;
+            line-height:20px;
+            color:#444;
+        }
+        .img_list li{
+            float:left;
+            width: 33%;
+            height: 33%;
+            background:#ddd;
+            text-align:center;
+            margin-bottom:0.5%;
+        }
+        .img_list li:nth-child(3n-1){
+            margin-left:0.5%;
+            margin-right:0.5%;
+        }
+        .img_list li img{
+            width: 50%;
+            height: 100%;
+            box-sizing:border-box;
+        }
