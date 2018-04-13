@@ -56,7 +56,7 @@
                     ],
                     series: [
                         {
-                            name: '蒸发量',
+                            name: '职位数',
                             type: 'bar',
                             data: [
                                 cityList[0].cityCount, cityList[1].cityCount, cityList[2].cityCount, cityList[3].cityCount,
@@ -109,7 +109,7 @@
                         trigger: 'axis'
                     },
                     legend: {
-                        data: ['2018年']
+                        data: ['2018年4月']
                     },
                     toolbox: {
                         show: true,
@@ -136,7 +136,7 @@
                     ],
                     series: [
                         {
-                            name: '2018年',
+                            name: '2018年4月',
                             type: 'bar',
                             data: [countList[1].count, countList[4].count, countList[3].count, countList[2].count, countList[0].count]
                         }
@@ -260,7 +260,7 @@
                         trigger: 'axis'
                     },
                     legend: {
-                        data: ['2018年']
+                        data: ['2018年4月']
                     },
                     toolbox: {
                         show: true,
@@ -282,12 +282,12 @@
                     yAxis: [
                         {
                             type: 'category',
-                            data: ['1', '2', '3', '4', '5']
+                            data: ['6000以下', '6000到1万', '1万到1万5', '1万5到2万', '2万以上']
                         }
                     ],
                     series: [
                         {
-                            name: '2018年',
+                            name: '2018年4月',
                             type: 'bar',
                             data: [salaryList.levelOne, salaryList.levelTwo, salaryList.levelThree, salaryList.levelFour, salaryList.levelFive]
                         }
@@ -333,11 +333,11 @@
                             radius: '55%',
                             center: ['50%', '50%'],
                             data: [
-                                {value: salaryList.levelOne, name: '等级1'},
-                                {value: salaryList.levelTwo, name: '等级2'},
-                                {value: salaryList.levelThree, name: '等级3'},
-                                {value: salaryList.levelFour, name: '等级4'},
-                                {value: salaryList.levelFive, name: '等级5'}
+                                {value: salaryList.levelOne, name: '6000以下'},
+                                {value: salaryList.levelTwo, name: '6000到1万'},
+                                {value: salaryList.levelThree, name: '1万到1万5'},
+                                {value: salaryList.levelFour, name: '1万5到2万'},
+                                {value: salaryList.levelFive, name: '2万以上'}
                             ].sort(function (a, b) {
                                 return a.value - b.value;
                             }),
@@ -408,7 +408,7 @@
                         trigger: 'axis'
                     },
                     legend: {
-                        data: ['2018年']
+                        data: ['2018年4月']
                     },
                     toolbox: {
                         show: true,
@@ -430,19 +430,20 @@
                     yAxis: [
                         {
                             type: 'category',
-                            data: [
-                                workYearList[0].minYear, workYearList[1].minYear, workYearList[2].minYear,
-                                workYearList[3].minYear, workYearList[4].minYear, workYearList[5].minYear
-                            ]
+                            data: ['应届毕业生', '不限', '一年以上', '三年以上', '五年以上', '十年以上' ]
                         }
                     ],
                     series: [
-                        {
-                            name: '2018年',
+                       {
+                            name: '2018年4月',
                             type: 'bar',
                             data: [
-                                workYearList[0].count, workYearList[1].count, workYearList[2].count,
-                                workYearList[3].count, workYearList[4].count, workYearList[5].count
+				workYearList[0].count,
+                                workYearList[1].count, 
+                                workYearList[2].count,
+                                workYearList[3].count, 
+                                workYearList[4].count,
+                                workYearList[5].count
                             ]
                         }
                     ]
@@ -487,12 +488,12 @@
                             radius: '55%',
                             center: ['50%', '50%'],
                             data: [
-                                {value: workYearList[0].count, name: "-1"},
-                                {value: workYearList[1].count, name: "0"},
-                                {value: workYearList[2].count, name: "1"},
-                                {value: workYearList[3].count, name: "3"},
-                                {value: workYearList[4].count, name: "5"},
-                                {value: workYearList[5].count, name: "10"}
+                                {value: workYearList[0].count, name: "应届毕业生"},
+                                {value: workYearList[1].count, name: "不限"},
+                                {value: workYearList[2].count, name: "1年以上"},
+                                {value: workYearList[3].count, name: "3年以上"},
+                                {value: workYearList[4].count, name: "5年以上"},
+                                {value: workYearList[5].count, name: "10年以上"}
                             ].sort(function (a, b) {
                                 return a.value - b.value;
                             }),
