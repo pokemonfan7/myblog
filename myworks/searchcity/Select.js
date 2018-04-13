@@ -30,8 +30,8 @@ export default class Select extends Component {
         super(props);
         this.state={
             search:false,//是否输入搜索，若没有则显示全部选项，若有则显示搜索选项
-            searchList:[],//搜索选项
-            searchWord:"",//前缀匹配的字
+            searchList:[],//输入关键字后匹配的搜索选项列表
+            searchWord:"",//前缀匹配的关键字
             arrowClass:"arrowTop",//控制箭头向上、向下
             listClass:"listHidden"//控制列表显示、隐藏
         };
@@ -39,7 +39,7 @@ export default class Select extends Component {
         this.listClick=this.listClick.bind(this);
         this.handleChange=this.handleChange.bind(this);
     }
-	//控制箭头向上、向下
+	//控制箭头图标向上、向下
     arrowClick(){
         if(this.state.arrowClass==="arrowTop"){
             this.setState({arrowClass:"arrowBot",listClass:"listShow"})
@@ -47,7 +47,7 @@ export default class Select extends Component {
             this.setState({arrowClass:"arrowTop",listClass:"listHidden"})
         }
     }
-	//控制列表选项，点击后选项输入在搜索框
+	//控制列表选项的每个item，点击后item输入在搜索框
     listClick(ev){
         let target = ev.target;
         if(target.nodeName.toLowerCase() === 'li'){
@@ -58,7 +58,7 @@ export default class Select extends Component {
 		}
 		this.setState({arrowClass:"arrowTop",listClass:"listHidden"});
     }
-	//搜索框文字改变后，重新显示搜索选项
+	//搜索框关键字改变后，重新显示搜索选项
     handleChange(){
         let v=this.input.value;
         let searchList=city.filter(x=>x.indexOf(v)===0);
@@ -79,15 +79,15 @@ export default class Select extends Component {
                 </div>
                 <div id="list" className={this.state.listClass}>
                     <ul  onClick={this.listClick}>
-						//三目运算符控制列表显示
-                        {this.state.search?
+                        {//三目运算符控制列表显示
+							this.state.search?
                         this.state.searchList.map(
-                            v=>
-                        <li className="list-li" key={v}><strong>{this.state.searchWord}</strong>{v.slice(this.state.searchWord.length)}</li>
+                            item=>
+                        <li className="list-li" key={item}><strong>{this.state.searchWord}</strong>{item.slice(this.state.searchWord.length)}</li>
                          ):city.map(
-                            v=>
-                        <li className="list-li" key={v}>{v}</li>
-                        )}
+                            item=>
+                        <li className="list-li" key={item}>{item}</li>)
+						}
                     </ul>
                 </div>
             </React.Fragment>
