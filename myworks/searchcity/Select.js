@@ -84,9 +84,11 @@ export default class Select extends Component {
                         this.state.searchList.map(
                             item=>
                         <li className="list-li" key={item}><strong>{this.state.searchWord}</strong>{item.slice(this.state.searchWord.length)}</li>
-                         ):city.map(
+                         ):
+                        city.map(
                             item=>
-                        <li className="list-li" key={item}>{item}</li>)
+                        <li className="list-li" key={item}>{item}</li>
+                        )
                         }
                     </ul>
                 </div>
