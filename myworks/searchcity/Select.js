@@ -53,10 +53,10 @@ export default class Select extends Component {
         if(target.nodeName.toLowerCase() === 'li'){
             this.input.value=target.innerHTML.replace(/<.+?>/gim,'');
         }
-		else if(target.nodeName.toLowerCase() === 'strong'){
-			this.input.value=target.parentNode.innerHTML.replace(/<.+?>/gim,'');
-		}
-		this.setState({arrowClass:"arrowTop",listClass:"listHidden"});
+        else if(target.nodeName.toLowerCase() === 'strong'){
+            this.input.value=target.parentNode.innerHTML.replace(/<.+?>/gim,'');
+        }
+        this.setState({arrowClass:"arrowTop",listClass:"listHidden"});
     }
 	//搜索框关键字改变后，重新显示搜索选项
     handleChange(){
