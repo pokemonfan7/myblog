@@ -80,14 +80,14 @@ export default class Select extends Component {
                 <div id="list" className={this.state.listClass}>
                     <ul  onClick={this.listClick}>
                         {//三目运算符控制列表显示
-							this.state.search?
+                        this.state.search?
                         this.state.searchList.map(
                             item=>
                         <li className="list-li" key={item}><strong>{this.state.searchWord}</strong>{item.slice(this.state.searchWord.length)}</li>
                          ):city.map(
                             item=>
                         <li className="list-li" key={item}>{item}</li>)
-						}
+                        }
                     </ul>
                 </div>
             </React.Fragment>
