@@ -90,7 +90,7 @@ nav{
   position: relative;
   max-width: 980px;
   margin: 0 auto;
-  margin-top: 70px;
+  padding-top: 70px;
   background: #aaa;
 }
 #search_box{
@@ -158,7 +158,7 @@ nav{
 main{
   max-width: 980px;
   margin:0 auto;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .main-container{
   background: #fff;

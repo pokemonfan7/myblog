@@ -120,15 +120,14 @@ nav{
 main{
   max-width: 980px;
   margin: 0 auto;
+  padding-top: 70px;
 }
 .work-list{
   width: 640px;
-  margin-top: 70px;
   background: #fff;
 }
 .work-aside{
   width: 320px;
-  margin-top: 70px;
   background: #fff;
 }
 .list-head, .aside-head{
