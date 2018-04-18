@@ -42,9 +42,15 @@ export default class Select extends Component {
 	//控制箭头图标向上、向下
     arrowClick(){
         if(this.state.arrowClass==="arrowTop"){
-            this.setState({arrowClass:"arrowBot",listClass:"listShow"})
+            this.setState({
+                arrowClass:"arrowBot",
+                listClass:"listShow"
+                })
         }else{
-            this.setState({arrowClass:"arrowTop",listClass:"listHidden"})
+            this.setState({
+                arrowClass:"arrowTop",
+                listClass:"listHidden"
+            })
         }
     }
 	//控制列表选项的每个item，点击后item输入在搜索框
@@ -56,7 +62,10 @@ export default class Select extends Component {
         else if(target.nodeName.toLowerCase() === 'strong'){
             this.input.value=target.parentNode.innerHTML.replace(/<.+?>/gim,'');
         }
-        this.setState({arrowClass:"arrowTop",listClass:"listHidden"});
+        this.setState({
+            arrowClass:"arrowTop",
+            listClass:"listHidden"
+        });
     }
 	//搜索框关键字改变后，重新显示搜索选项
     handleChange(){
@@ -74,8 +83,17 @@ export default class Select extends Component {
         return (
             <React.Fragment>
                 <div id="container" className="clearfix">
-                    <input className="input" type="text" placeholder="请输入城市名称" ref={input=>this.input=input} onChange={this.handleChange} />
-                    <a className={this.state.arrowClass} onClick={this.arrowClick} />
+                    <input 
+                        className="input" 
+                        type="text" 
+                        placeholder="请输入城市名称" 
+                        ref={input=>this.input=input} 
+                        onChange={this.handleChange} 
+                    />
+                    <a 
+                        className={this.state.arrowClass} 
+                        onClick={this.arrowClick} 
+                    />
                 </div>
                 <div id="list" className={this.state.listClass}>
                     <ul  onClick={this.listClick}>
@@ -83,19 +101,26 @@ export default class Select extends Component {
                         this.state.search?
                         this.state.searchList.map(
                             item=>
-                        <li className="list-li" key={item}><strong>{this.state.searchWord}</strong>{item.slice(this.state.searchWord.length)}</li>
+                        <li className="list-li" key={item}>
+                            <strong>
+                                {this.state.searchWord}
+                            </strong>
+                            {item.slice(this.state.searchWord.length)}
+                        </li>
                          ):
                         city.map(
                             item=>
-                        <li className="list-li" key={item}>{item}</li>
+                        <li className="list-li" key={item}>
+                            {item}
+                        </li>
                         )
                         }
                     </ul>
                 </div>
             </React.Fragment>
-    );
+        );
     }
-  }
+}
 
 
 
