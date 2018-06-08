@@ -49,3 +49,55 @@ body {
 .menu-list a.active {
     color: #fff;
 }
+/* section1 */
+section {
+    position: relative;
+}
+.banner-item {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+.banner-item h2 {
+    font-size: 40px;
+    color: #fff;
+}
+.banner-item p {
+    font-size: 20px;
+    color: #fff;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+      width: 1230px;
+      height: 800px;
+  }
+.swiper-slide:nth-child(1) {
+    background: #000 url(./img/banner1.jpg) center center /cover no-repeat;
+}
+.swiper-slide:nth-child(2) {
+    background: #000 url(./img/banner2.jpg) center center /cover no-repeat;
+}
+.swiper-pagination-bullet {
+    background: #000;
+    opacity: 0.2;
+}
+.swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+}
+.swiper-button-prev {
+    width: 30px;
+    height: 60px;
+    left: 50px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA1CAYAAABWW1tXAAABL0lEQVRYhcXZzW0DIRCG4ddW7mnFHaQFl0A6SgdxCSnBJaSElJBU8OXgbLyy9meAmWEkLrNIjwBpGeAgiYQ4AWfgE/gAQFJ0O0n61j2KJJ4SRnoFnme5d4BjMnqPpOmdR5EUAu+iEbAJ9YbNqCdchXrB1agH3IT2ws1oD9yFtsLdaAvsgtbCbmgN7IpaYXfUAoege3AYugWHomtwOLoEb6FvXugjvIVePNE5nIpOcDo6wV8r6DUKlcSR29HiZ6HyfQFKUM1tWuMSNdVD8MdEGr6UHPLnSsO3Pg7ZncJxS6chFUgYXtN5SJXpjresz5CThBveCnfjPXAX3gs34x7whK/FIu4F8weYcU+4CveGzXgEbMKj4F088tr4ArzulbeZIy+SOEgpbxJnbhfn/28Sv2HOszIDuJUgAAAAAElFTkSuQmCC")
+}
+.swiper-button-next {
+    width: 30px;
+    height: 60px;
+    right: 50px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA1CAYAAABWW1tXAAABNElEQVRYhcXZ4Y2DMAwF4NdboKuwwa3QEehGN0JHuBEYoSvcBu0E734AOoQIcZxnn6X8wLH0EQNSgAtJLHEDMAD4BvBEdJAEyZF/8SI5LPmwsUfT8I9CI64ApqX1aa1OWfn2IBXfJ9Lwo2QKXpoIx88mQ/FaQRhuKQrBrYVyvKVYireeqQz3XB8J7roxFLgX7sZ74C68F3bjCtiFq+BmXAmD5JcVV8Mg+bDgEbAJj4Kr+IVkfSvqjwnA50H+p7SvVsRYQN8AblFtrj5a/4JGwCZUDZtRJdyEquBmVAG70F7YjfbAXagX7kY9sARthWVoCyxFrbActcAhaA0OQ8/gEkoFWoLP0FGBHsEp6B5OQ7dwKrrC6ShZ/mwMAHcAj4Bt7xyFVoetdB3bN4n1n8QT83+J0PgFMJq1Tz9I6hQAAAAASUVORK5CYII=")
+}

@@ -43,8 +43,41 @@
     </header>
     <main class="main">
         <section>
-            123123
+            <div class="banner-item">
+                <h2>SHARE GAMES SHARE FUN</h2>
+                <p>penny stone</p>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </section>
     </main>
 </body>
+<script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </html>
