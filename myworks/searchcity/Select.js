@@ -45,7 +45,7 @@ export default class Select extends Component {
             this.setState({
                 arrowClass:"arrowBot",
                 listClass:"listShow"
-                })
+            })
         }else{
             this.setState({
                 arrowClass:"arrowTop",
