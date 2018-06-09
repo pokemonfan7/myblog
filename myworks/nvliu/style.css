@@ -6,6 +6,9 @@ body {
     min-width: 1230px;
     font-family: "PingFang SC","Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft YaHei","微软雅黑",sans-serif;
 }
+a {
+    text-decoration: none;
+}
 .clearfix:after {
     content: "";
     clear: both;
@@ -44,13 +47,12 @@ body {
     font-size: 14px;
     color: #a0a0a0;
     line-height: 60px;
-    text-decoration: none;
 }
 .menu-list a.active {
     color: #fff;
 }
-/* section1 */
-section {
+/* section.banner */
+.banner {
     position: relative;
 }
 .swiper-container {
@@ -98,4 +100,81 @@ section {
 .swiper-button-next {
     right: 50px;
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA1CAYAAABWW1tXAAABNElEQVRYhcXZ4Y2DMAwF4NdboKuwwa3QEehGN0JHuBEYoSvcBu0E734AOoQIcZxnn6X8wLH0EQNSgAtJLHEDMAD4BvBEdJAEyZF/8SI5LPmwsUfT8I9CI64ApqX1aa1OWfn2IBXfJ9Lwo2QKXpoIx88mQ/FaQRhuKQrBrYVyvKVYireeqQz3XB8J7roxFLgX7sZ74C68F3bjCtiFq+BmXAmD5JcVV8Mg+bDgEbAJj4Kr+IVkfSvqjwnA50H+p7SvVsRYQN8AblFtrj5a/4JGwCZUDZtRJdyEquBmVAG70F7YjfbAXagX7kY9sARthWVoCyxFrbActcAhaA0OQ8/gEkoFWoLP0FGBHsEp6B5OQ7dwKrrC6ShZ/mwMAHcAj4Bt7xyFVoetdB3bN4n1n8QT83+J0PgFMJq1Tz9I6hQAAAAASUVORK5CYII=")
+}
+/* section.intro */
+.intro {
+    padding: 210px 0;
+    background-color: #000;
+}
+.container {
+    position: relative;
+    width: 1230px;
+    margin: 0 auto;
+}
+.img-inner {
+    width: 740px;
+    height: 490px;
+    background: url(./img/about.jpg) 0 0 /contain no-repeat;
+}
+.intro-inner {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    box-sizing: border-box;
+    width: 595px;
+    height: 300px;
+    padding: 50px 30px 60px 80px;
+    background-color: #3e3e3e;
+    font-size: 15px;
+    color: #fff;
+}
+.intro-inner h3 {
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.intro-inner p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.more-btn {
+    margin-top: 30px;
+}
+.more-btn a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #f1501a;
+    border-radius: 28px;
+    background-color: #f1501a;
+    font-size: 14px;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+}
+.more-btn a:hover {
+    background-color: #3e3e3e;
+    color: #f1501a;
+    transition: 1s;
+}
+.more-btn span {
+    padding: 0 30px 0 10px;
+}
+.description {
+    width: 750px;
+    margin: 80px auto 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.description p {
+    margin-top: 10px;
+    text-align: justify;
+    color: #c8c8c8;
+}
+/* sextion.about */
+.about {
+    padding: 192px 0 352px;
+    background: url(./img/section3.jpg) 50% 0 /cover no-repeat;
+    background-attachment: fixed;
 }
