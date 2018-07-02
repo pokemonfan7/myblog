@@ -1,0 +1,18 @@
+  <div id="container" className="clearfix">
+    <input 
+        class="input" 
+        type="text" 
+        placeholder="请输入城市名称" 
+        #inputBox
+        (ng-change)="handleChange(inputBox.value)"
+        [value]="searchList?searchList:[]"
+    >
+    <a class="arrowBot"></a>
+  </div>
+  <div id="list" *ngIf="searchList">
+    <ul  onClick={this.listClick}>
+        "searchList?
+        <li class="list-li" *ngFor="let citys of searchList">{{citys}}</li>:
+        <li class="list-li" *ngFor="let citys of city">{{citys}}</li>"
+    </ul>
+  </div>
